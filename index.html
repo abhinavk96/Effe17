@@ -29,7 +29,9 @@
       </div>
     </div>
     <div style="display:none;" id="myDiv" class="animate-bottom">
-      poing poing
+      Here comes the content of website...
+      This content is visible after the loading is complete and after delay of 10 secs.
+      Reduce the time in the JS in html code/.
     </div>
     </div>
   </body>
@@ -57,7 +59,7 @@
 <script>
   var myVar;
     function myFunction() {
-      myVar = setTimeout(showPage, 5000);
+      myVar = setTimeout(showPage, 10000);
     }
     function showPage() {
       document.getElementById("loader").style.display = "none";
