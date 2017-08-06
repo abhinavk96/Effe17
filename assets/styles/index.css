@@ -4,14 +4,19 @@ body {
 }
 .main-logo {
 	position: absolute !important;
-	top: 18%;
+	top: 8%;
 	display: block;
-	margin-left: 5vw;
+	margin: auto;
 	height:55vh;
 	width:50vw;
 	background: url('../images/main-logo.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }
 .main-content {
 	position: absolute !important;
