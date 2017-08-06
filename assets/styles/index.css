@@ -2,9 +2,20 @@
 body {
 
 }
+.main-logo {
+	position: absolute !important;
+	top: 18%;
+	display: block;
+	margin-left: 5vw;
+	height:55vh;
+	width:50vw;
+	background: url('../images/main-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 .main-content {
 	position: absolute !important;
-	top: 70%;
+	top: 40%;
 	display: block;
 	margin-left: 5vw;
 	height:40vh;
