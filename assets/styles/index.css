@@ -1,7 +1,7 @@
 
 .main-content {
 	position: absolute !important;
-	top: 40%;
+	top: 70%;
 	display: block;
 	margin-left: 5vw;
 	height:40vh;
@@ -21,7 +21,7 @@
 }
 
 .ripple-image {
-	height:40vh;
 	width: 90vw;
+	height:40vh !important;
 	margin-left: 5vw;
 }
