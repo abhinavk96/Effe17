@@ -1,0 +1,65 @@
+
+.cloud {
+  position: absolute;
+}
+.planeInitialPosition {
+  right: 0;
+}
+.direction.reverse {
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+.plane-elements {
+  right: 0;
+  position: absolute;
+  z-index: 5;
+  transform-origin: top left;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.plane-elements .element {
+  position: absolute;
+}
+.plane-elements .propeller {
+  background: url('http://andrewashley.co.nz/code-examples/Plane/res/propeller.png') top left no-repeat;
+  width: 57px;
+  height: 223px;
+  top: 72px;
+}
+.plane-elements .plane {
+  background: url('http://andrewashley.co.nz/code-examples/Plane/res/plane.png') top left no-repeat;
+  width: 980px;
+  height: 391px;
+  left: 57px;
+}
+.plane-elements .banner {
+  background: url('http://andrewashley.co.nz/code-examples/Plane/res/banner-main.png') bottom left no-repeat;
+  width: 901px;
+  height: 177px;
+  left: 980px;
+  top: 20px;
+  z-index: 50;
+}
+.plane-elements .banner-tip {
+  background: url('http://andrewashley.co.nz/code-examples/Plane/res/banner-tip.png') center no-repeat;
+  width: 132px;
+  height: 145px;
+  left: 1831px;
+  top: 35px;
+  z-index: -50;
+}
+.plane-elements .banner-text {
+  color: #fff;
+  font-size: 6em;
+  font-style: italic;
+  padding: 22px 50px;
+}
+.plane-elements .reverse .banner-text {
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
