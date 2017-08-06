@@ -12,16 +12,19 @@
 }
 
 .ripple-wrap {
-	position: relative;
+	/*position: relative;*/
 }
 
 .ripple-wrap canvas {
 	position: absolute;
 	z-index: 1;
+	height:50vh;
+	background-size: contain;
 }
 
 .ripple-image {
-	width: 90vw;
-	height:40vh !important;
+	/*width: 90vw;*/
+	height:70vh;
+	/*object-fit: contain;*/
 	margin-left: 5vw;
 }
