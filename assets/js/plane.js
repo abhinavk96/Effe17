@@ -9,28 +9,12 @@ function R(min, max) {
 };
 
 				// Create Clouds
-        var totalClouds = 10,
             body = $('body'),
 						w = window.innerWidth,
 						h = window.innerHeight;
 
-        function createClouds(element) {
-            for (var i = 0, div; i < totalClouds; i++) {
-                cloud = document.createElement('img');
-                cloud.src = 'http://www.andrewashley.co.nz/code-examples/Plane/res/cloud-' + getRandomIntInclusive(1, 5) + '.png';
-                cloud.className = 'cloud';
-                element.append(cloud);
-                TweenMax.set(cloud, {
-                    x: R(0, w),
-                    y: R(0, h),
-                    opacity: R(0.5, 1),
-                    zIndex: R(3, 7),
-                    scale: R(0, 0.5) + 0.5
-                });
-            };
-        }
+    
 
-        // createClouds(body);
 
 
 				// Fly
