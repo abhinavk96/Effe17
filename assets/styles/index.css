@@ -1,7 +1,7 @@
 
 .main-content {
 	position: absolute !important;
-	top: 20%;
+	top: 40%;
 	display: block;
 	margin-left: 5vw;
 	height:80vh;
@@ -9,4 +9,13 @@
 	background: url('../images/taj.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+.ripple-wrap {
+	position: relative;
+}
+
+.ripple-wrap canvas {
+	position: absolute;
+	z-index: 1;
 }

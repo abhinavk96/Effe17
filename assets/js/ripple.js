@@ -33,7 +33,7 @@ function waterRipple(img) {
     ctx.drawImage(img, 0, 0);
     canvas.style.left = img.offsetLeft + 'px';
     canvas.style.top = img.offsetTop + 'px';
-
+    
     img.parentNode.insertBefore(canvas, img);
     
     texture = ctx.getImageData(0, 0, width, height);
