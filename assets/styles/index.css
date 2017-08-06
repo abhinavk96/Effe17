@@ -1,6 +1,12 @@
 
 .main-content {
 	position: absolute !important;
-	top: 10px;
-	left: 20px;
+	top: 20%;
+	display: block;
+	margin-left: 5vw;
+	height:80vh;
+	width:90vw;
+	background: url('../images/taj.png');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
