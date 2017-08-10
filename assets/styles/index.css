@@ -29,6 +29,18 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+#kite-large {
+	position: absolute !important;
+	top: 22%;
+	left:70%;
+	display: block;
+	margin-left: 5vw;
+	height:40vh;
+	width:25vw;
+	background: url('../images/kite-large.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 .ripple-wrap {
 	/*position: relative;*/
@@ -46,4 +58,20 @@ body {
 	height:70vh;
 	/*object-fit: contain;*/
 	margin-left: 5vw;
+}
+
+/**kite
+*
+*/
+.kite {
+	animation:dash 8s ease-in-out infinite; transform-origin: 60% bottom;
+}
+@keyframes dash {
+25% {
+    transform:rotate(5deg);
+}
+ 
+75% {
+    transform:rotate(-5deg);
+}
 }
