@@ -1,6 +1,11 @@
 
 body {
 overflow:hidden;
+	background: url('../images/background-2.png');
+	background-size:cover;
+	margin-left:0;
+	margin-right:0;
+
 }
 #plane {
 	z-index:-1;
@@ -65,7 +70,8 @@ overflow:hidden;
 }
 
 .ripple-wrap {
-	/*position: relative;*/
+	position: relative;
+	background-color:white;
 }
 
 .ripple-wrap canvas {
@@ -79,7 +85,7 @@ overflow:hidden;
 	/*width: 90vw;*/
 	height:70vh;
 	/*object-fit: contain;*/
-	margin-left: 5vw;
+	margin-left: 4vw;
 }
 
 /**kite

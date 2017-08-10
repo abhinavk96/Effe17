@@ -27,7 +27,7 @@ function waterRipple(img) {
         step = line_width * 2, 
         count = height / line_width;
         
-    canvas.width = width;
+    canvas.width = width+1000;
     canvas.height = height;
 
     ctx.drawImage(img, 0, 0);
