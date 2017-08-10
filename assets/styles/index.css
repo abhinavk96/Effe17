@@ -60,7 +60,7 @@ overflow:hidden;
 	z-index: 100;
 	opacity:0.9;
 	width:12vw;
-	background: url('../images/boat-main.png');
+	background: url('../images/boat-text.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	animation: boat1 50s linear infinite;
