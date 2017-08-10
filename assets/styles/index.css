@@ -35,7 +35,8 @@ body {
 	left:70%;
 	display: block;
 	margin-left: 5vw;
-	height:40vh;
+	height:45vh;
+	z-index: -1;
 	width:25vw;
 	background: url('../images/kite-large.png');
 	background-size: contain;
