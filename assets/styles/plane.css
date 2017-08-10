@@ -13,7 +13,7 @@
 .plane-elements {
   right: 0;
   position: absolute;
-  z-index: 5;
+  z-index: -1;
   transform-origin: top left;
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);

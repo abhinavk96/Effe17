@@ -19,7 +19,7 @@ function R(min, max) {
 
 				// Fly
 				var pageWidth = window.innerWidth,
-            duration = pageWidth / 120,
+            duration = pageWidth / 60,
             d = pageWidth * 2,
 						distance = -d,
 						reverseDistance = d;
@@ -29,7 +29,7 @@ function R(min, max) {
             delay: 1
         });
         TweenMax.set('.plane-elements', { css: {'top': '4%'} });
-        TweenMax.set('.plane-elements', { scale:0.2 });
+        TweenMax.set('.plane-elements', { scale:0.125 });
 
 
 
@@ -53,7 +53,7 @@ function R(min, max) {
 					  var value = getRandomIntInclusive(2,4),
 								distanceAway = '0.' + value;
 					  
-								TweenMax.set('.plane-elements', { scale:0.2 });
+								TweenMax.set('.plane-elements', { scale:0.1 });
         }
 
 

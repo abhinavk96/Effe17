@@ -2,6 +2,9 @@
 body {
 overflow:hidden;
 }
+#plane {
+	z-index:-1;
+}
 .main-logo {
 	position: absolute !important;
 	top: 8%;
