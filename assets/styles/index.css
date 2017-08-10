@@ -1,6 +1,6 @@
 
 body {
-
+overflow:hidden;
 }
 .main-logo {
 	position: absolute !important;
