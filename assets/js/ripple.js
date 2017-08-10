@@ -50,6 +50,8 @@ function waterRipple(img) {
         newframe();
         ctx.putImageData(ripple, 0, 0);
     }
+
+  
     
     /**
      * Disturb water at specified point
@@ -65,6 +67,12 @@ function waterRipple(img) {
         }
     }
     
+      function boatDisturbance() {
+        var boatRect = $('#boat-main').offset();
+        var x = boatRect.left;
+        var y = boatRect.top;
+        disturb(x+200,y+50);
+    }
     /**
      * Generates new ripples
      */
@@ -131,7 +139,11 @@ function waterRipple(img) {
     
     canvas.onmousemove = function(/* Event */ evt) {
         disturb(evt.offsetX || evt.layerX, evt.offsetY || evt.layerY);
+        console.log(evt.offsetX,evt.offsetY);
     };
+    disturb(0,0);
+    setInterval(boatDisturbance, 10);
+
     
     setInterval(run, delay);
     
