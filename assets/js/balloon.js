@@ -20,14 +20,15 @@ function R(min, max) {
                 // Fly
                 var pageHeight = window.innerHeight,
                 duration = pageHeight/5,
-                d = pageHeight
+                d = pageHeight*2;
+                distance=-d;
                 
 
         var flyingTl = new TimelineMax({
             repeat: -1,
             delay: 0.5
         });
-        TweenMax.set('.balloon-elements', { css: {'left': '40%'} });
+        TweenMax.set('.balloon-elements', { css: {'left': '15%'} });
         TweenMax.set('.balloon-elements', { scale:0.4 });
 
 
@@ -37,7 +38,7 @@ function R(min, max) {
                 onComplete: balloonAltitude
         })
             .to('.balloon-elements', duration, {
-                x: 0, y: reverseDistance, z: 0,
+                x: 0, y: 15, z: 0,
                 ease: Power0.easeNone, y: 0,
                 onComplete: balloonAltitude
             });
@@ -46,7 +47,7 @@ function R(min, max) {
             $('.balloon-elements .direction').toggleClass('reverse');
 
             var altitude = getRandomIntInclusive(5,15) + '%';
-                                TweenMax.set('.balloon-elements', { css: {'left': altitude} });
+                                TweenMax.set('.balloon-elements', { css: {'bottom': 0} });
                     
                       var value = getRandomIntInclusive(2,4),
                                 distanceAway = '0.' + value;
