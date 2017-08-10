@@ -42,6 +42,24 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+#boat-main {
+	position: absolute !important;
+	top: 70%;
+	left:0%;
+	display: block;
+	margin-left: 5vw;
+	height:20vh;
+	z-index: 100;
+	opacity:0.9;
+	width:25vw;
+	background: url('../images/boat-main.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	animation: boat1 50s linear infinite;
+	-webkit-perspective: 1500px; /* Chrome, Safari, Opera  */
+    perspective: 1500px;
+
+}
 
 .ripple-wrap {
 	/*position: relative;*/
@@ -75,4 +93,35 @@ body {
 75% {
     transform:rotate(-5deg);
 }
+}
+
+/**boat
+*
+*/
+.boat {
+
+}
+@keyframes boat1 {
+  0% {
+     -moz-transform:  translateX(0) scaleX(-1);
+        -o-transform:  translateX(0) scaleX(-1);
+        -webkit-transform:  translateX(0) scaleX(-1);
+        transform: translateX(0) scaleX(-1);
+  }
+  50% {
+    transform: translateX(90vw);
+     -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: translateX(90vw) scaleX(-1);
+  }
+  51% {
+        transform: scaleX(1) translateX(90vw);
+
+  }
+  100%{
+
+    transform: scaleX(1) translateX(0vw);
+
+  }
 }
