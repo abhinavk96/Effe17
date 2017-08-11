@@ -5,9 +5,15 @@
 	<link rel="stylesheet" href="assets/styles/index.css">
 	<link rel="stylesheet" href="assets/styles/plane.css">
 	<link rel="stylesheet" href="assets/styles/balloon.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/modal.css">
 	<script src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/modal.js"></script>
 	<script src="assets/js/tweenMax.js"></script>
 	<script src="assets/js/ripple.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+ 
 </head>
 <body>
 <canvas class="fireworks"></canvas>
@@ -32,14 +38,30 @@
 	<div class="direction">
 		<div class="element balloon"></div>
 	</div>
+	</a>
 </div>
 <div class="main-content">
-	
+<div id="modal-container">
+<div id="con">
+	<div id="cross"><div id="cr">X</div></div>
+  <div class="modal-background">
+    <div class="modal">
+      <iframe src="./elaine/event.html" width="1000" height="500" style="border: 0px;"></iframe>
+    </div>
+  </div>
+  </div>
 </div>
-<div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
-</body>
+</div>
+
+<div class="ripple-wrap" style="padding-top: 5px;z-index: -10;"><img style="opacity:0;margin-left:none;z-index: -100;" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
 <script src="assets/js/anime.min.js"></script>
 <script src="assets/js/canvas.js"></script>
+<script type="text/javascript">
+	$('#balloon').click(function() {
+		$(this).css("z-index","0");
+	});
+</script>
 <script src="assets/js/plane.js"></script>
 <script src="assets/js/balloon.js"></script>
+</body>
 </html>

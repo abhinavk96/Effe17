@@ -10,6 +10,12 @@ overflow:hidden;
 #plane {
 	z-index:-1;
 }
+#balloon:hover {
+	cursor: pointer;
+}
+#boat-main {
+	cursor: pointer;
+}
 .main-logo {
 	position: absolute !important;
 	top: 8%;
@@ -28,7 +34,7 @@ overflow:hidden;
 }
 .main-content {
 	position: absolute !important;
-	top: 40%;
+	top: 34%;
 	display: block;
 	margin-left: 5vw;
 	height:40vh;

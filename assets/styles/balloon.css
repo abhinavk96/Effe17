@@ -28,3 +28,7 @@
   height: 600px;
   left: 57px;
 }
+
+#balloon:hover {
+  cursor: pointer;s
+}
