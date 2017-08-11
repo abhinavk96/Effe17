@@ -3,25 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>EFFE</title>
-    <link rel='stylesheet' href='pace.css'>
-    <script src="pace.js"></script>
     <style media="screen">
       body{
         background-color: #41EFF9;
       }
+      .scale {
+              -webkit-transition: all 200ms ease-in;
+              -webkit-transform: scale(1.3) translate(-80px, -150px);
+              -ms-transition: all 200ms ease-in;
+              -ms-transform: scale(1.3) translate(-80px, -150px);
+              -moz-transition: all 200ms ease-in;
+              -moz-transform: scale(1.3) translate(-80px, -150px);
+              transition: all 200ms ease-in;
+              transform: scale(1.3) translate(-80px, -150px);
+              transition: all 200ms ease-in;
+              transform: scale(1.3) translate(-80px, -150px);
+      }
+      .move{
+              -webkit-transition: all 2000ms ease-in;
+              -webkit-transform: translate(800px, 0);
+              -ms-transition: all 2000ms ease-in;
+              -ms-transform: translate(800px, 0);
+              -moz-transition: all 2000ms ease-in;
+              -moz-transform:translate(800px, 0);
+              transition: all 2000ms ease-in;
+              transform: translate(800px, 0);
+              transition: all 2000ms ease-in;
+              transform: translate(800px, 0);
+      }
       #loader{
         width: 650px;
       }
-      .move{
-        transform: translate(74px,0px);
-        -ms-transform: translate(74px,0px); /* IE 9 */
-        -webkit-transform: translate(74px,0px); /* Safari and Chrome */
-        -o-transform: translate(74px,0px); /* Opera */
-        -moz-transform: translate(74px,0px); /* Firefox */
-      }
     </style>
   </head>
-  <body  onload="myFunction()" style="margin:0;">
+  <body style="margin:0;">
+    <img src="main-logo.png" alt="logo" style="display:none; position: absolute; width:600px; margin-left: 30%;">
     <div id="loader" style="margin: 50px auto;">
       <?xml version="1.0" encoding="utf-8"?>
                   <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -633,36 +649,30 @@
 
 $(document).ready(function(){
   function fade1() {$('#Item1_1').fadeOut(700);}
-  function fadi1() {$('#Item1_1').fadeIn(700);}
   function fade2() {$('#Item1_2').fadeOut(700);}
-  function fadi2() {$('#Item1_2').fadeIn(700);}
   function fade3() {$('#Item1_3').fadeOut(700);}
-  function fadi3() {$('#Item1_3').fadeIn(700);}
   function fade4() {$('#Item1_4').fadeOut(700);}
-  function fadi4() {$('#Item1_4').fadeIn(700);}
   function fade5() {$('#Item1_5').fadeOut(700);}
-  function fadi5() {$('#Item1_5').fadeIn(700);}
   function fade6() {$('#Item1_6').fadeOut(700);}
-  function fadi6() {$('#Item1_6').fadeIn(700);}
+  function fadeimg() {$('img').fadeIn(1000);}
+  function scale() {$('#TajMahal').addClass('scale');}
+  function scale1() {$('#Plane_1').addClass('move');}
+  function scale2() {$('#Trail1, #Trail2, #Trail3').addClass('move');}
 
-  var i = 0;
-  var t = 0;
-  while (t<5) {
-    setTimeout(fade1,i+1000);
-    setTimeout(fade3,i+2000);
-    setTimeout(fade2,i+3000);
-    setTimeout(fade4,i+4000);
-    setTimeout(fade5,i+5000);
-    setTimeout(fade6,i+6000);
-    setTimeout(fadi1,i+7000);
-    setTimeout(fadi2,i+8000);
-    setTimeout(fadi3,i+9000);
-    setTimeout(fadi4,i+10000);
-    setTimeout(fadi5,i+11000);
-    setTimeout(fadi6,i+12000);
-    i += 12000;
-    t++;
-  }
+    setTimeout(fade1,1000);
+    setTimeout(fade3,2000);
+    setTimeout(fade2,3000);
+    setTimeout(fade4,4000);
+    setTimeout(fade5,5000);
+    setTimeout(fade6,6000);
+    setTimeout(scale,7000);
+    setTimeout(scale1,7000);
+    setTimeout(scale2,7000);
+    setTimeout(fadeimg,8000);
+
+
+
+
 });
 
 </script>
