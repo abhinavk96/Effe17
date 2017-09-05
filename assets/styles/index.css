@@ -48,6 +48,11 @@ overflow:hidden;
 	background: url('../images/kite-large-2.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	 -webkit-transition: width 1.2s, height 1.2s, background-color 1.2s, -webkit-transform 1.2s;
+    transition: width 1.2s, height 1.2s, background-color 1.2s, transform 1.2s;
+}
+#kite-large:hover {
+	height:50vh;
 }
 #boat-main {
 	position: absolute !important;
