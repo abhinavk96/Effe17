@@ -44,7 +44,6 @@ overflow:hidden;
 	display: block;
 	margin-left: 5vw;
 	height:45vh;
-	z-index: -1;
 	width:25vw;
 	background: url('../images/kite-large-2.png');
 	background-size: contain;
