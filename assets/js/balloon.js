@@ -36,12 +36,8 @@ function R(min, max) {
         flyingTl.to('.balloon-elements', duration, {
             x: 0, y: distance, z: 0,
                 onComplete: balloonAltitude
-        })
-            .to('.balloon-elements', duration, {
-                x: 0, y: 15, z: 0,
-                ease: Power0.easeNone, y: 0,
-                onComplete: balloonAltitude
-            });
+        });
+            
 
         function balloonAltitude(e) {
             $('.balloon-elements .direction').toggleClass('reverse');
@@ -56,5 +52,4 @@ function R(min, max) {
         }
 
 
-                // Propeller and Banner
-                TweenMax.to('.balloon-elements', 0.9, { x:2, y:1, rotation:0.5, yoyo:true, repeat:-1 });
+               

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="assets/styles/animate.min.css">
 	<link rel="stylesheet" href="assets/styles/index.css">
 	<link rel="stylesheet" href="assets/styles/plane.css">
 	<link rel="stylesheet" href="assets/styles/balloon.css">
@@ -10,6 +11,7 @@
 	<script src="assets/js/ripple.js"></script>
 </head>
 <body>
+
 <canvas class="fireworks"></canvas>
 <div class="main-logo">
 	
@@ -37,9 +39,30 @@
 	
 </div>
 <div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
+<a id="demo01" href="#animatedModal">DEMO01</a>
+
+    <!--DEMO01-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            CLOSE MODAL
+        </div>
+            
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+        </div>
+    </div>
 </body>
+<script src="assets/js/animatedModal.js"></script>
 <script src="assets/js/anime.min.js"></script>
 <script src="assets/js/canvas.js"></script>
 <script src="assets/js/plane.js"></script>
 <script src="assets/js/balloon.js"></script>
+<script>
+	$('#demo01').animatedModal();
+	$('#kite-large').on('click', function() {
+		console.log('hello');
+		$('#demo01').click();
+	})
+</script>
 </html>
