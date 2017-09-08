@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<canvas class="fireworks"></canvas>
+<!-- <canvas class="fireworks"></canvas> -->
 <div class="main-logo">
 	
 </div>
@@ -41,14 +41,14 @@
 <div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
 
     <!--DEMO01-->
-    <div id="sponsorsModal">
+    <div id="sponsorsModal" class="genericModal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div class="close-sponsorsModal"> 
             CLOSE MODAL
         </div>
             
         <div class="modal-content">
-                 <iframe src="file:///Users/abhinav/Downloads/one-page-navigation-css-menu/index.html#t1" width="100%" height="800" ></iframe>
+                 <iframe src="./events-all/index.html" width="100%" height="800" ></iframe>
  <!--Your modal content goes here-->
         </div>
     </div>
@@ -70,5 +70,8 @@
 	// 	console.log('hello');
 	// 	$('#demo01').click();
 	// })
+	$(document).onLoad(function() {
+		var x = $(".main-content").offset().top + $(".main-content").height(); 
+	})
 </script>
 </html>

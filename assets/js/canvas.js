@@ -14,6 +14,7 @@ function setCanvasSize() {
   canvasEl.style.width = window.innerWidth + 'px';
   canvasEl.style.height = window.innerHeight/1.4 + 'px';
   canvasEl.getContext('2d').scale(2, 2);
+  console.log(canvasEl.width, canvasEl.height, canvasEl.style.width, canvasEl.style.height);
 }
 
 function updateCoords(e) {

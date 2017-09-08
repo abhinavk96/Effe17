@@ -1,11 +1,16 @@
 
 body {
-overflow:hidden;
+	overflow:hidden;
 	background: url('../images/background-2.png');
 	background-size:cover;
+	background-repeat: no-repeat;
 	margin-left:0;
 	margin-right:0;
 
+}
+.blurred {
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
 }
 #plane {
 	z-index:-1;
@@ -15,8 +20,8 @@ overflow:hidden;
 	top: 8%;
 	display: block;
 	margin: auto;
-	height:55vh;
-	width:50vw;
+	height:20vh;
+	width:50%;
 	background: url('../images/main-logo.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -81,15 +86,14 @@ overflow:hidden;
 .ripple-wrap canvas {
 	position: absolute;
 	z-index: 1;
-	height:50vh;
+	/*height:50vh;*/
 	background-size: contain;
 }
 
 .ripple-image {
-	/*width: 90vw;*/
-	height:70vh;
-	/*object-fit: contain;*/
-	margin-left: 4vw;
+/*	width: 50%;
+	height:30vh;
+*/	display: none;
 }
 
 /**kite
