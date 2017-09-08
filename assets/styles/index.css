@@ -36,11 +36,11 @@ body {
 	top: 40%;
 	display: block;
 	margin-left: 5vw;
-	height:40vh;
+	height:auto;
 	width:90vw;
-	background: url('../images/taj-upper.png');
+/*	background: url('../images/taj-upper.png');
 	background-size: contain;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 #kite-large {
 	position: absolute !important;
@@ -79,8 +79,9 @@ body {
 }
 
 .ripple-wrap {
-	position: relative;
+	position: absolute;
 	background-color:white;
+
 }
 
 .ripple-wrap canvas {

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<!-- <canvas class="fireworks"></canvas> -->
+<canvas class="fireworks"></canvas>
 <div class="main-logo">
 	
 </div>
@@ -35,9 +35,7 @@
 		<div class="element balloon"></div>
 	</div>
 </div>
-<div class="main-content">
-	
-</div>
+<img class="main-content" src="assets/images/taj-upper.png">
 <div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
 
     <!--DEMO01-->
@@ -70,6 +68,8 @@
 	// 	console.log('hello');
 	// 	$('#demo01').click();
 	// })
+	    var x = $(".main-content").offset().top + $(".main-content").height(); 
+    $('.ripple-wrap').css("top",x+"px");
 	$(document).onLoad(function() {
 		var x = $(".main-content").offset().top + $(".main-content").height(); 
 	})

@@ -7,7 +7,7 @@
  * @link http://chikuyonok.ru
  */
 function waterRipple(img) {
-    var x = $(".main-content").offset().top + $(".main-content").height(); 
+
     var canvas = document.createElement('canvas'),
         /** @type {CanvasRenderingContext2D} */
         ctx = canvas.getContext('2d'),
@@ -33,7 +33,7 @@ function waterRipple(img) {
 
     ctx.drawImage(img, 0, 0,canvas.width, canvas.width/4.5);
     canvas.style.left = 0+ 'px';
-    canvas.style.top = x - 75 + 'px';
+    canvas.style.top = 0+ 'px';
     
     img.parentNode.insertBefore(canvas, img);
     
