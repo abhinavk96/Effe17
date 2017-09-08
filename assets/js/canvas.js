@@ -12,7 +12,7 @@ function setCanvasSize() {
   canvasEl.width = window.innerWidth * 2;
   canvasEl.height = window.innerHeight/1.4 * 2;
   canvasEl.style.width = window.innerWidth + 'px';
-  canvasEl.style.height = window.innerHeight/2 + 'px';
+  canvasEl.style.height = window.innerHeight/1.4 + 'px';
   canvasEl.getContext('2d').scale(2, 2);
   console.log(canvasEl.width, canvasEl.height, canvasEl.style.width, canvasEl.style.height);
 }

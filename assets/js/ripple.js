@@ -7,11 +7,12 @@
  * @link http://chikuyonok.ru
  */
 function waterRipple(img) {
-
+    var x = $(".main-content").offset().top + $(".main-content").height(); 
+    $('.ripple-wrap').css("top",x+"px");
     var canvas = document.createElement('canvas'),
         /** @type {CanvasRenderingContext2D} */
         ctx = canvas.getContext('2d'),
-        width = window.innerWidth,
+        width = Math.ceil(window.innerWidth*0.9),
         height = window.innerHeight/2,
         half_width = width >> 1,
         half_height = height >> 1,
@@ -27,12 +28,15 @@ function waterRipple(img) {
         line_width = 20,
         step = line_width * 2, 
         count = height / line_width;
+        console.log(width);
+        console.log(window.innerWidth);
+        console.log(window.innerWidth*0.9);
         
     canvas.width = width;
     canvas.height = window.innerHeight/2;
 
     ctx.drawImage(img, 0, 0,canvas.width, canvas.width/4.5);
-    canvas.style.left = 0+ 'px';
+    canvas.style.left = Math.ceil(window.innerWidth*0.05)+ 'px';
     canvas.style.top = 0+ 'px';
     
     img.parentNode.insertBefore(canvas, img);
@@ -143,7 +147,7 @@ function waterRipple(img) {
         console.log(evt.offsetX,evt.offsetY);
     };
     disturb(0,0);
-    setInterval(boatDisturbance, 10);
+    // setInterval(boatDisturbance, 10);
 
     
     setInterval(run, delay);
