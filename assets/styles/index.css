@@ -80,7 +80,8 @@ body {
 }
 
 .ripple-wrap {
-	position: relative;
+	position: absolute;
+	top:50%;
 	background-color:white;
 }
 
@@ -92,9 +93,7 @@ body {
 }
 
 .ripple-image {
-/*	width: 50%;
-	height:30vh;
-*/	display: none;
+	/*display: none;*/
 }
 
 /**kite

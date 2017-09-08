@@ -28,17 +28,17 @@ function waterRipple(img) {
         step = line_width * 2, 
         count = height / line_width;
         
-    canvas.width = width;
+    canvas.width = window.innerWidth*0.9;
     canvas.height = window.innerHeight/2;
 
     ctx.drawImage(img, 0, 0,canvas.width, canvas.width/4.5);
     canvas.style.left = window.innerWidth*0.05+ 'px';
-    canvas.style.top = x -20 + 'px';
+    canvas.style.top =0 + 'px';
     
     img.parentNode.insertBefore(canvas, img);
     
-    texture = ctx.getImageData(0, 0, width, height);
-    ripple = ctx.getImageData(0, 0, width, height);
+    texture = ctx.getImageData(0, 0,canvas.width, canvas.width/4.5);
+    ripple = ctx.getImageData(0, 0,canvas.width, canvas.width/4.5);
     
     for (var i = 0; i < size; i++) {
         last_map[i] = ripplemap[i] = 0;

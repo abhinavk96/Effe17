@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<!-- <canvas class="fireworks"></canvas> -->
+<canvas class="fireworks"></canvas>
 <div class="main-logo">
 	
 </div>
@@ -48,7 +48,7 @@
         </div>
             
         <div class="modal-content">
-                 <iframe src="./events-all/index.html" width="100%" height="800" ></iframe>
+                 <!-- <iframe src="./events-all/index.html" width="100%" height="800" ></iframe> -->
  <!--Your modal content goes here-->
         </div>
     </div>
@@ -66,6 +66,9 @@
 		// height:'70%',
 		// left:'15%'
 	});
+    var x = $(".main-content").offset().top + $(".main-content").height(); 
+	$('.ripple-wrap').css("top",x +"px")
+	console.log('done');
 	// $('#kite-large').on('click', function() {
 	// 	console.log('hello');
 	// 	$('#demo01').click();
