@@ -11,7 +11,7 @@ function waterRipple(img) {
     var canvas = document.createElement('canvas'),
         /** @type {CanvasRenderingContext2D} */
         ctx = canvas.getContext('2d'),
-        width = window.innerWidth,
+        width = window.innerWidth*0.9,
         height = window.innerHeight/2,
         half_width = width >> 1,
         half_height = height >> 1,
@@ -32,8 +32,8 @@ function waterRipple(img) {
     canvas.height = window.innerHeight/2;
 
     ctx.drawImage(img, 0, 0,canvas.width, canvas.width/4.5);
-    canvas.style.left = 0+ 'px';
-    canvas.style.top = x - 75 + 'px';
+    canvas.style.left = window.innerWidth*0.05+ 'px';
+    canvas.style.top = x -20 + 'px';
     
     img.parentNode.insertBefore(canvas, img);
     

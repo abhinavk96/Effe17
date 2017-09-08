@@ -36,11 +36,12 @@ body {
 	top: 40%;
 	display: block;
 	margin-left: 5vw;
-	height:40vh;
+	/*margin: 0 auto;*/
+	height:auto;
 	width:90vw;
-	background: url('../images/taj-upper.png');
-	background-size: contain;
-	background-repeat: no-repeat;
+	/*background: url('../images/taj-upper.png');*/
+/*	background-size: contain;
+	background-repeat: no-repeat;*/
 }
 #kite-large {
 	position: absolute !important;
