@@ -6,7 +6,11 @@
     <style media="screen">
       body{
         background-image: url(bg.jpg);
-        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      html,body {
+        overflow:hidden;
       }
       .scale {
               -webkit-transition: all 200ms ease-in;
@@ -38,7 +42,7 @@
     </style>
   </head>
   <body style="margin:0;">
-    <div id="loader" style="margin: 50px auto;">
+    <div id="loader" style="margin: 0 auto;">
       <?xml version="1.0" encoding="utf-8"?>
                   <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                   <svg version="1.1" id="OBJECTS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -654,7 +658,7 @@ $(document).ready(function(){
   function fade4() {$('#Item1_4').fadeOut(700);}
   function fade5() {$('#Item1_5').fadeOut(700);}
   function fade6() {$('#Item1_6').fadeOut(700);}
-  function fadeimg() {$('img').fadeIn(1000);}
+  // function fadeimg() {$('img').fadeIn(1000);}
   function scale() {$('#TajMahal').addClass('scale');}
   function scale1() {$('#Plane_1').addClass('move');}
   function scale2() {$('#Trail1, #Trail2, #Trail3').addClass('move');}
