@@ -30,8 +30,8 @@
 <a href="#"><img src="assets/images/multicity.png" class="multicity"></a>
 <a id="kite-large" href="#sponsorsModal" class="kite">
 </a>
-<div id="boat-main" class="boat">
-</div>
+<a id="boat-main" href="#developersModal" class="boat">
+</a>
 <div id="balloon" class="balloon-elements">
 	<div class="direction">
 		<div class="element balloon"></div>
@@ -41,6 +41,14 @@
 <div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
     <div id="sponsorsModal" class="genericModal">
         <div class="close-sponsorsModal"> 
+            CLOSE MODAL
+        </div>
+        <div class="modal-content">
+                 <iframe src="./events-all/index.html" width="100%" height="800" ></iframe>
+        </div>
+    </div>
+    <div id="developersModal" class="genericModal">
+        <div class="close-developersModal"> 
             CLOSE MODAL
         </div>
         <div class="modal-content">
@@ -57,6 +65,13 @@
 	$('#kite-large').animatedModal({
 		color:'transparent',
 		modalTarget: 'sponsorsModal'
+		// width : '70%',
+		// height:'70%',
+		// left:'15%'
+	});
+	$('#boat-main').animatedModal({
+		color:'transparent',
+		modalTarget: 'developersModal'
 		// width : '70%',
 		// height:'70%',
 		// left:'15%'
