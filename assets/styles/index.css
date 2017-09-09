@@ -7,6 +7,33 @@ body,html {
 	padding:0;
 
 }
+iframe, object, embed {
+    max-width: 100%;
+}
+#closebt-container {
+	position: relative;
+	top:5px;
+	width:99%;
+	text-align: right;
+	margin-top:0%;
+	margin-bottom:-10%;
+	/*margin-right:10%;*/
+}
+
+.closebt {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	cursor:pointer;
+	width:10vh;
+
+}
+
+.closebt:hover {
+	transform:rotate(90deg);
+}
 .content {
 	overflow: hidden!important;
 	visibility: hidden;
