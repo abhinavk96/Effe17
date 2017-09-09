@@ -32,11 +32,11 @@
 </a>
 <a id="boat-main" href="#developersModal" class="boat">
 </a>
-<div id="balloon" class="balloon-elements">
+<a id="balloon" href="#eventsModal" class="balloon-elements">
 	<div class="direction">
 		<div class="element balloon"></div>
 	</div>
-</div>
+</a>
 <img class="main-content" src="assets/images/taj-upper.png">
 <div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
     <div id="sponsorsModal" class="genericModal">
@@ -55,6 +55,15 @@
                  <iframe src="./events-all/index.html" width="100%" height="800" ></iframe>
         </div>
     </div>
+    <div id="eventsModal" class="genericModal">
+        <div class="close-eventsModal"> 
+            CLOSE MODAL
+        </div>
+        <div class="modal-content">
+                 <iframe src="./events-all/index.html" width="100%" height="800" ></iframe>
+        </div>
+    </div>
+
 </body>
 <script src="assets/js/animatedModal.js"></script>
 <script src="assets/js/anime.min.js"></script>
@@ -72,6 +81,13 @@
 	$('#boat-main').animatedModal({
 		color:'transparent',
 		modalTarget: 'developersModal'
+		// width : '70%',
+		// height:'70%',
+		// left:'15%'
+	});
+	$('#balloon').animatedModal({
+		color:'transparent',
+		modalTarget: 'eventsModal'
 		// width : '70%',
 		// height:'70%',
 		// left:'15%'
