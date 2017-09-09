@@ -1,15 +1,21 @@
 
 body {
 	overflow:hidden;
+	margin-left:0;
+	margin-right:0;
+	margin:0;
+	padding:0;
+
+}
+.content {
+	overflow: hidden!important;
+	visibility: hidden;
+	overflow:hidden;
 	background: url('../images/background-2.png');
 	background-size:cover;
 	background-repeat: no-repeat;
 	margin-left:0;
 	margin-right:0;
-
-}
-.content {
-	overflow: hidden!important
 }
 .blurred {
 	-webkit-filter:blur(10px);

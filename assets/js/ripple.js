@@ -161,6 +161,6 @@ function waterRipple(img) {
 };
 function setCanvasSize() {
     console.log("resize happened");
-    location.reload();
+    location.reload();  
 }
 window.addEventListener('resize', setCanvasSize, false);
