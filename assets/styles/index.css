@@ -8,6 +8,9 @@ body {
 	margin-right:0;
 
 }
+.content {
+	overflow: hidden!important
+}
 .blurred {
 	-webkit-filter:blur(10px);
 	filter:blur(10px);
