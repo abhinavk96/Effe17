@@ -11,7 +11,7 @@
   right: 0;
   position: absolute;
   z-index: 5;
-  width:20vw;
+  width:17vw;
   height:auto;
   transform-origin: top left;
   -webkit-transform: scale(0.5);
@@ -27,8 +27,8 @@
 .balloon-elements .balloon {
   background: url('../images/balloon-text.png') top left no-repeat;
   background-size: contain;
-  width: 30vw;
-  height: 43vw;
+  width: 25vw;
+  height: 39vw;
   left: 57px;
   bottom:50%;
 }
