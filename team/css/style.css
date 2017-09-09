@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Asap:700);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,html {
+  overflow:hidden;
+}
+.name {
+  font-family: "Asap";
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  opacity: 0.0;
+  position: absolute;
+  left: 30%;
+  -moz-transition: all 300ms ease-out 0ms;
+  -o-transition: all 300ms ease-out 0ms;
+  -webkit-transition: all 300ms ease-out;
+  -webkit-transition-delay: 0ms;
+  transition: all 300ms ease-out 0ms;
+}
+
+.marvel-icons {
+  position: absolute;
+  height: 100vh !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 10%;
+  background: url('../bg.jpg');
+  background-size: cover;
+  
+}
+
+.icon-list {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.icon-list li {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 5px;
+  opacity: 0.0;
+  z-index: 1;
+  -moz-transition: all 600ms ease-out;
+  -o-transition: all 600ms ease-out;
+  -webkit-transition: all 600ms ease-out;
+  transition: all 600ms ease-out;
+}
+.icon-list li.shown {
+  opacity: 1.0;
+}
+.icon-list li.active {
+  width: 100%;
+  top: 20px !important;
+  left: 0px !important;
+  z-index: 100;
+}
+.icon-list li.active img {
+  width: 25%;
+}
+.icon-list li.active .name {
+  opacity: 1.0;
+  top: 10%;
+  -moz-transition: all 300ms ease-out 500ms;
+  -o-transition: all 300ms ease-out 500ms;
+  -webkit-transition: all 300ms ease-out;
+  -webkit-transition-delay: 500ms;
+  transition: all 300ms ease-out 500ms;
+}
+.icon-list li.inactive {
+  -moz-transform: translate3d(0px, 230px, 0px);
+  -webkit-transform: translate3d(0px, 230px, 0px);
+  transform: translate3d(0px, 230px, 0px);
+  opacity: .6;
+}
+.icon-list li.inactive:hover {
+  opacity: 1.0;
+}
+.icon-list li img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -moz-transition: all 600ms ease-out;
+  -o-transition: all 600ms ease-out;
+  -webkit-transition: all 600ms ease-out;
+  transition: all 600ms ease-out;
+}
