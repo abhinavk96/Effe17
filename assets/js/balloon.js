@@ -20,7 +20,7 @@ function R(min, max) {
                 // Fly
                 var pageHeight = window.innerHeight,
                 duration = pageHeight/25,
-                d = pageHeight/5;
+                d = pageHeight/4;
                 distance=-d;
                 
 
