@@ -157,5 +157,10 @@ function waterRipple(img) {
     setInterval(function() {
         disturb(rnd() * width, rnd() * height);
     }, 700);
-    
+  
 };
+function setCanvasSize() {
+    console.log("resize happened");
+    location.reload();
+}
+window.addEventListener('resize', setCanvasSize, false);
