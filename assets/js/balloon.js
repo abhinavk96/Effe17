@@ -19,8 +19,8 @@ function R(min, max) {
 
                 // Fly
                 var pageHeight = window.innerHeight,
-                duration = pageHeight/5,
-                d = pageHeight*2;
+                duration = pageHeight/25,
+                d = pageHeight/5;
                 distance=-d;
                 
 
@@ -40,10 +40,10 @@ function R(min, max) {
             
 
         function balloonAltitude(e) {
-            $('.balloon-elements .direction').toggleClass('reverse');
+            // $('.balloon-elements .direction').toggleClass('reverse');
 
-            var altitude = getRandomIntInclusive(5,15) + '%';
-                                TweenMax.set('.balloon-elements', { css: {'bottom': 0} });
+            var altitude = getRandomIntInclusive(15,25) + '%';
+                                TweenMax.set('.balloon-elements', { css: {'bottom': altitude} });
                     
                       var value = getRandomIntInclusive(2,4),
                                 distanceAway = '0.' + value;
