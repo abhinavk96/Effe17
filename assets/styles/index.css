@@ -42,6 +42,18 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;*/
 }
+
+.multicity {
+width:8vw;
+height:auto;
+position:fixed;
+top:2%;
+right:0;
+ -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+}
+
 #kite-large {
 	position: absolute !important;
 	top: 22%;
