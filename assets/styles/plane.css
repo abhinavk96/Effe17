@@ -1,9 +1,6 @@
 
-.cloud {
-  position: absolute;
-}
 .planeInitialPosition {
-  right: 0;
+  right: 50%;
 }
 .direction.reverse {
   -moz-transform: rotate3d(0, 1, 0, 180deg);
@@ -11,7 +8,7 @@
   transform: rotate3d(0, 1, 0, 180deg);
 }
 .plane-elements {
-  right: 0;
+  right: 20%;
   position: absolute;
   z-index: -1;
   transform-origin: top left;
