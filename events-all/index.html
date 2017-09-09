@@ -25,8 +25,7 @@
   -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
-  background-image: url("background.jpg");
-  background-size: cover;
+  background-color: #fff;
   overflow: hidden; 
 }
 
@@ -42,7 +41,7 @@
   left: 0;
 }
 
-#p2, #p3, #p4, #p5 {
+#p2, #p3, #p4, #p5,#p6 {
   left: 200%;
 }
 
@@ -52,15 +51,18 @@
       background-size: cover; }
 #p3 { background-image: url("abstract-background-with-artistic-pink-watercolor-texture_1035-6841.jpg");
       background-size: cover;}
-#p4 { background-image: url("amazing-watercolor-texture-purple-color_1035-6666.jpg");
+#p4 { background-image: url("orange-and-red-watercolor-background_1035-9216.jpg");
       background-size: cover; }
-#p5 { background-image: url("modern-blue-watercolor-background-design_1035-8464.jpg");
+#p5 { background-image: url("red-watercolor-background-design_1034-731.jpg");
+      background-size: cover; }
+#p6 { background-image: url("modern-blue-watercolor-background-design_1035-8464.jpg");
       background-size: cover; }
 
 #t2:target #p2,
 #t3:target #p3,
 #t4:target #p4,
-#t5:target #p5 {
+#t5:target #p5,
+#t6:target #p6 {
   transform: translateX(-190%);
   -webkit-transform: translateX(-190%);
   -moz-transform: translateX(-190%);
@@ -71,14 +73,16 @@
 #t2:target #p1, 
 #t3:target #p1,
 #t4:target #p1,
-#t5:target #p1{
+#t5:target #p1,
+#t6:target #p1{
   background: black;
 }
 
 #t2:target #p1 .icon, 
 #t3:target #p1 .icon,
 #t4:target #p1 .icon,
-#t5:target #p1 .icon {
+#t5:target #p1 .icon,
+#t6:target #p1 .icon {
   -webkit-filter: blur(3px);
 }
 
@@ -99,7 +103,8 @@ ul .icon:hover {
 #t2:target ul .icon,
 #t3:target ul .icon,
 #t4:target ul .icon,
-#t5:target ul .icon{
+#t5:target ul .icon,
+#t6:target ul .icon{
   transform: scale(.6);
   -webkit-transform: scale(.6);
   -moz-transform: scale(.6);
@@ -110,6 +115,7 @@ ul .icon:hover {
 #t2:target #dos,
 #t3:target #tres,
 #t4:target #cuatro,
+#t5:target #cuatr,
 #t4:target #cinco {
   transform: scale(1.2) !important;
   -webkit-transform: scale(1.2) !important;
@@ -207,7 +213,8 @@ a {
 #t2:target .page#p2 .icon,
 #t3:target .page#p3 .icon,
 #t4:target .page#p4 .icon,
-#t5:target .page#p5 .icon {
+#t5:target .page#p5 .icon,
+#t6:target .page#p6 .icon {
   transform: translateX(0) !important;
   -webkit-transform: translateX(0) !important;
   -moz-transform: translateX(0) !important;
@@ -227,41 +234,43 @@ a {
   <div class="ct" id="t2">
     <div class="ct" id="t3">
       <div class="ct" id="t4">
-         <div class="ct" id="t5">
+      <div class="ct" id="t5">
+         <div class="ct" id="t6">
           <ul id="menu">
-            <a href="#t1"><li class="icon fa fa-bolt" id="uno"></li></a>
-            <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a>
-            <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
-            <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
-            <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
+            <a href="#t1"><li class="icon fa fa-camera" id="uno"></li></a>
+            <a href="#t2"><li class="icon fa fa-music" id="dos"></li></a>
+            <a href="#t3"><li class="icon fa fa-paint-brush" id="tres"></li></a>
+            <a href="#t4"><li class="icon fa fa-book" id="cuatro"></li></a>
+            <a href="#t5"><li class="icon fa fa-heart" id="cuato"></li></a>
+            <a href="#t6"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
           </ul>
           <div class="page" id="p1">
-             <section class="icon fa fa-bolt"><span class="title">Bolt</span><span class="hint">Like this pen to see the magic!...<br> Just kidding, it won't happen anything but I'll be really happy If you do so.</span></section>  
+             <section class="icon fa fa-camera"><span class="title">AMS<br>Coming Soon!</span><!-- <span class="hint"><br> Just kidding, it won't happen anything but I'll be really happy If you do so.</span> --></section>  
           </div>
           <div class="page" id="p2">
-            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+            <section class="icon fa fa-music"><span class="title">Music</span><br>Coming Soon</section>
           </div>  
           <div class="page" id="p3">
-            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+            <section class="icon fa fa-paint-brush"><span class="title">Fine Arts<br>Coming Soon</span></section>
           </div>
           <div class="page" id="p4">
-            <section class="icon fa fa-dribbble">
-              <span class="title">Dribbble</span>
-              <p class="hint">
-                <a href="https://dribbble.com/albertohartzet" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
-              </p>
-              <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
+            <section class="icon fa fa-book">
+              <span class="title">Lit-Soc<br>Coming Soon</span>
             </section>
           </div> 
           <div class="page" id="p5">
+            <section class="icon fa fa-heart"><span class="title">Dance <br> Coming soon</span></section>
+          </div>
+          <div class="page" id="p6">
             <section class="icon fa fa-plus-circle">
-              <span class="title">More</span>
-              <p class="hint">
+              <span class="title">Dramatics <br> Coming soon</span>
+              <!-- <p class="hint">
                 <span>You love one page & CSS only stuff? </span><br/>
                 <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
-              </p>
+              </p> -->
             </section>
           </div> 
+        </div>
         </div>
       </div>
     </div>

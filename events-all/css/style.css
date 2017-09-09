@@ -7,8 +7,7 @@ html, body, .page {
   -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
-  background-image: url("background.jpg");
-  background-size: cover;
+  background-color: #fff;
   overflow: hidden; 
 }
 
@@ -24,7 +23,7 @@ html, body, .page {
   left: 0;
 }
 
-#p2, #p3, #p4, #p5 {
+#p2, #p3, #p4, #p6 {
   left: 200%;
 }
 
@@ -34,15 +33,15 @@ html, body, .page {
       background-size: cover;  }
 #p3 { background-image: url("abstract-background-with-artistic-pink-watercolor-texture_1035-6841.jpg");
       background-size: cover;}
-#p4 { background-image: url("amazing-watercolor-texture-purple-color_1035-6666.jpg");
+#p4 { background-image: url("orange-and-red-watercolor-background_1035-9216.jpg");
       background-size: cover;}
-#p5 { background-image: url("modern-blue-watercolor-background-design_1035-8464.jpg");
+#p6 { background-image: url("modern-blue-watercolor-background-design_1035-8464.jpg");
       background-size: cover; }
 
 #t2:target #p2,
 #t3:target #p3,
 #t4:target #p4,
-#t5:target #p5 {
+#t6:target #p6 {
   transform: translateX(-190%);
   -webkit-transform: translateX(-190%);
   -moz-transform: translateX(-190%);
@@ -53,14 +52,14 @@ html, body, .page {
 #t2:target #p1, 
 #t3:target #p1,
 #t4:target #p1,
-#t5:target #p1{
+#t6:target #p1{
   background: black;
 }
 
 #t2:target #p1 .icon, 
 #t3:target #p1 .icon,
 #t4:target #p1 .icon,
-#t5:target #p1 .icon {
+#t6:target #p1 .icon {
   -webkit-filter: blur(3px);
 }
 
@@ -81,7 +80,7 @@ ul .icon:hover {
 #t2:target ul .icon,
 #t3:target ul .icon,
 #t4:target ul .icon,
-#t5:target ul .icon{
+#t6:target ul .icon{
   transform: scale(.6);
   -webkit-transform: scale(.6);
   -moz-transform: scale(.6);
@@ -189,7 +188,7 @@ a {
 #t2:target .page#p2 .icon,
 #t3:target .page#p3 .icon,
 #t4:target .page#p4 .icon,
-#t5:target .page#p5 .icon {
+#t6:target .page#p6 .icon {
   transform: translateX(0) !important;
   -webkit-transform: translateX(0) !important;
   -moz-transform: translateX(0) !important;
