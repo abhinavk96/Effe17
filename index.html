@@ -96,10 +96,11 @@
 	// 	console.log('hello');
 	// 	$('#demo01').click();
 	// })
-	    var x = $(".main-content").offset().top + $(".main-content").height(); 
+	var x = $(".main-content").offset().top + $(".main-content").height(); 
     $('.ripple-wrap').css("top",x+"px");
-	$(document).onLoad(function() {
-		var x = $(".main-content").offset().top + $(".main-content").height(); 
-	})
+	$(window).on('load', function() { 
+		console.log("Hello");
+	 });
+
 </script>
 </html>
