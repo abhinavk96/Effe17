@@ -56,7 +56,7 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
-                 <iframe src="./team/index.html" id="teamFrame"  onload="this.width=screen.width;this.height=screen.height+200;" style="border:none" ></iframe>
+                 <iframe id="teamFrame"  onload="this.width=screen.width;this.height=screen.height+200;" style="border:none" ></iframe>
         </div>
     </div>
     <div id="eventsModal" class="genericModal">
@@ -90,6 +90,8 @@
 		// width:'90%'
 	});
 	var isEventsModalOpen=false;
+    var isTeamModalOpen=false;
+
 	var x = $(".main-content").offset().top + $(".main-content").height(); 
     $('.ripple-wrap').css("top",x+"px");
     $('#balloon').on('click', function(){
@@ -97,6 +99,13 @@
     	if(!isEventsModalOpen) {
     	$('#eventsFrame').attr('src','./events-all/index.html');
     	isEventsModalOpen=true
+    	}
+    });
+    $('#boat-main').on('click', function(){
+    	console.log('frame frame');
+    	if(!isTeamModalOpen) {
+    	$('#teamFrame').attr('src','./team/index.html');
+    	isTeamModalOpen=true
     	}
     });
 	$(window).on('load', function() { 
