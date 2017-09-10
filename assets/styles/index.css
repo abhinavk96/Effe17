@@ -153,10 +153,10 @@ right:8vw;
 #balloon2 {
 	position: absolute !important;
 	top: 25%;
-	right:90%;
+	right:30%;
 	display: block;
 	margin-left: 5vw;
-	height:20vh;
+	height:16vh;
 	z-index:0;
 	opacity:0.9;
 	width:14vh;

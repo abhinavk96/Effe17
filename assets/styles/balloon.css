@@ -27,8 +27,8 @@
 .balloon-elements .balloon {
   background: url('../images/balloon-text.png') top left no-repeat;
   background-size: contain;
-  width: 38vw;
-  height: 49vw;
+  width: 25vw;
+  height: 37vw;
   left: 57px;
   bottom:50%;
 }
