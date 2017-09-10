@@ -86,6 +86,15 @@
 <script src="assets/js/plane.js"></script>
 <script src="assets/js/balloon.js"></script>
 <script>
+	$(document).ready(function(){
+		if(window.innerHeight > window.innerWidth){
+    console.log("Please use Landscape!");
+    $('.content').hide();
+    $('body').css("background","url('assets/images/rotate-device.png') no-repeat");
+
+}
+	});
+
 	$('#kite-large').animatedModal({
 		color:'transparent',
 		modalTarget: 'sponsorsModal'
