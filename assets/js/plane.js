@@ -12,15 +12,19 @@ function R(min, max) {
             body = $('body'),
 						w = window.innerWidth,
 						h = window.innerHeight;
-
-    
+                        console.log(w,h);
+                    var scalingFactor=0;
+                    if (w<761) {
+                        scalingFactor=0.08;
+                    }
+                    else scalingFactor=0.125;
 
 
 
 				// Fly
 				var pageWidth = Math.ceil(window.innerWidth*0.4),
             duration = pageWidth / 60,
-            d = pageWidth * 2,
+            d = pageWidth ,
 						distance = -d,
 						reverseDistance = d;
 
@@ -28,8 +32,9 @@ function R(min, max) {
             repeat: -1,
             delay: 1
         });
+
         TweenMax.set('.plane-elements', { css: {'top': '4%'} });
-        TweenMax.set('.plane-elements', { scale:0.125 });
+        TweenMax.set('.plane-elements', { scale:scalingFactor });
 
 
 
@@ -53,7 +58,7 @@ function R(min, max) {
 					  var value = getRandomIntInclusive(2,4),
 								distanceAway = '0.' + value;
 					  
-								TweenMax.set('.plane-elements', { scale:0.125 });
+								TweenMax.set('.plane-elements', { scale:scalingFactor });
         }
 
 

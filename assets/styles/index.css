@@ -56,9 +56,9 @@ iframe, object, embed {
 	-webkit-filter:blur(10px);
 	filter:blur(10px);
 }
-#plane {
+/*#plane {
 	z-index:-1;
-}
+}*/
 .main-logo {
 	position: absolute !important;
 	top: 8%;
