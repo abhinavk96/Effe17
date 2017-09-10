@@ -34,7 +34,7 @@
 <a href="https://effe.org.in/multicity"><img src="assets/images/multicity.png" class="multicity"></a>
 <a id="kite-large" href="#sponsorsModal" class="kite">
 </a>
-<a id="boat-main" href="#developersModal" class="boat">
+<a id="boat-main" href="#teamModal" class="boat">
 </a>
 <a id="balloon" href="#eventsModal" class="balloon-elements">
 	<div class="direction">
@@ -51,12 +51,12 @@
                  <iframe src="./sponsors/index.html" id="sponsorsFrame"  onload="this.width=screen.width;this.height=screen.height;" style="border:none" ></iframe>
         </div>
     </div>
-    <div id="developersModal" class="genericModal">
-        <div class="close-developersModal"> 
-            CLOSE MODAL
+    <div id="teamModal" class="genericModal">
+        <div id="closebt-container" class="close-teamModal"> 
+            <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
-                 <iframe src="" id="developersFrame" width="100%" height="800" ></iframe>
+                 <iframe src="./team/index.html" id="teamFrame"  onload="this.width=screen.width;this.height=screen.height;" style="border:none" ></iframe>
         </div>
     </div>
     <div id="eventsModal" class="genericModal">
@@ -81,7 +81,7 @@
 	});
 	$('#boat-main').animatedModal({
 		color:'transparent',
-		modalTarget: 'developersModal'
+		modalTarget: 'teamModal'
 	});
 	$('#balloon').animatedModal({
 		color:'transparent',
