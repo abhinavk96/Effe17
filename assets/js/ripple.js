@@ -165,7 +165,7 @@ function setCanvasSize() {
     console.log("resize happened");
     console.log(w,h);
     console.log(window.innerWidth,window.innerHeight);
-    if(Math.abs(h-window.innerHeight)>20 || Math.abs(w-window.innerWidth) > 20)
+    if(Math.abs(h-window.innerHeight)>100 || Math.abs(w-window.innerWidth) > 100)
     location.reload();  
 }
 window.addEventListener('resize', setCanvasSize, false);
