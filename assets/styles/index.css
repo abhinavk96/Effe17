@@ -1,8 +1,9 @@
 
 .generic-loader {
 	position:fixed;
-	top:50%!important;
-	left:50%!important;
+	top:45%!important;
+	left:45%!important;
+	width:10vw;
 }
 
 body,html {
