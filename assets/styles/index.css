@@ -43,6 +43,7 @@ iframe, object, embed {
 	background-repeat: no-repeat;
 	margin-left:0;
 	margin-right:0;
+	z-index:0;
 }
 .blurred {
 	-webkit-filter:blur(10px);
@@ -125,6 +126,23 @@ right:0;
     perspective: 1500px;
 
 }
+#balloon2 {
+	position: absolute !important;
+	top: 25%;
+	right:90%;
+	display: block;
+	margin-left: 5vw;
+	height:20vh;
+	z-index:0;
+	opacity:0.9;
+	width:14vh;
+	background: url('../images/balloon-2-text.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	animation: float 6s ease-in-out infinite;
+
+
+}
 
 .ripple-wrap {
 	position: absolute;
@@ -180,4 +198,15 @@ right:0;
     transform: translateX(-80vw);
 
   }
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
