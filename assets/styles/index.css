@@ -95,6 +95,23 @@ right:0;
  -ms-transform: rotate(-20deg); /* IE 9 */
     -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
     transform: rotate(-20deg);
+   -webkit-transition: width 0.6s, height 1.2s, background-color 1.2s, -webkit-transform 1.2s;
+    transition: width 0.6s, height 1.2s, background-color 1.2s, transform 1.2s;
+}
+.multicity:hover, .register:hover {
+	width:10vw;
+}
+.register {
+width:8vw;
+height:auto;
+position:fixed;
+top:2%;
+right:8vw;
+ -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+   -webkit-transition: width 0.6s, height 1.2s, background-color 1.2s, -webkit-transform 1.2s;
+    transition: width 0.6s, height 1.2s, background-color 1.2s, transform 1.2s;
 }
 
 #kite-large {
