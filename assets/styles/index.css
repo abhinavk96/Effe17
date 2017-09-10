@@ -109,14 +109,14 @@ right:0;
 }
 #boat-main {
 	position: absolute !important;
-	top: 70%;
+	top: 65%;
 	right:0%;
 	display: block;
 	margin-left: 5vw;
 	height:20vh;
 	z-index: 100;
 	opacity:0.9;
-	width:12vw;
+	width:16vw;
 	background: url('../images/boat-text-team.png');
 	background-size: contain;
 	background-repeat: no-repeat;
