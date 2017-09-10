@@ -70,6 +70,14 @@
                  <iframe  scrolling="no" id="eventsFrame" onload="this.width=screen.width;this.height=screen.height+200;" ></iframe>
         </div>
     </div>
+    <div id="proModal" class="genericModal">
+        <div id="closebt-container" class="close-proModal"> 
+            <img src="assets/images/close-icon.png" class="closebt">
+        </div>
+        <div class="modal-content">
+                 <iframe  scrolling="no" id="proFrame" onload="this.width=screen.width;this.height=screen.height+200;" ></iframe>
+        </div>
+    </div>
 </div>
 </body>
 <script src="assets/js/animatedModal.js"></script>
@@ -92,6 +100,12 @@
 		// left: '5%',
 		// width:'90%'
 	});
+	$('#balloon2').animatedModal({
+		color:'transparent',
+		modalTarget: 'proModal'
+		// left: '5%',
+		// width:'90%'
+	});
 	var isEventsModalOpen=false;
     var isTeamModalOpen=false;
 
@@ -109,6 +123,13 @@
     	if(!isTeamModalOpen) {
     	$('#teamFrame').attr('src','./team/index.html');
     	isTeamModalOpen=true
+    	}
+    });
+    $('#balloon2').on('click', function(){
+    	console.log('frame frame');
+    	if(!isProModalOpen) {
+    	$('#proFrame').attr('src','./pro/index.html');
+    	isProModalOpen=true
     	}
     });
 	$(window).on('load', function() { 
