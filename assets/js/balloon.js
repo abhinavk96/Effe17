@@ -25,7 +25,7 @@ function R(min, max) {
                 
 
         var flyingTl = new TimelineMax({
-            repeat: -1,
+            repeat: 0,
             delay: 0.5
         });
         TweenMax.set('.balloon-elements', { css: {'left': '15%'} });
@@ -42,13 +42,6 @@ function R(min, max) {
         function balloonAltitude(e) {
             // $('.balloon-elements .direction').toggleClass('reverse');
 
-            var altitude = getRandomIntInclusive(15,25) + '%';
-                                TweenMax.set('.balloon-elements', { css: {'bottom': altitude} });
-                    
-                      var value = getRandomIntInclusive(2,4),
-                                distanceAway = '0.' + value;
-                      
-                                TweenMax.set('.balloon-elements', { scale:0.4 });
         }
 
 
