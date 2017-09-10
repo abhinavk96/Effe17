@@ -120,7 +120,7 @@ right:0;
 	background: url('../images/boat-text-team.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	animation: boat1 50s linear ;
+	animation: boat1 50s linear infinite ;
 	-webkit-perspective: 1500px; /* Chrome, Safari, Opera  */
     perspective: 1500px;
 
