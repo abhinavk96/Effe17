@@ -12,10 +12,10 @@
 	<script src="assets/js/ripple.js"></script>
 </head>
 <body>
-<div class="loader">
+<!-- <div class="loader">
 	<iframe src="./preloader/index.html" onload="this.width=window.innerWidth;this.height=window.innerHeight;" style="border:none" ></iframe>
 
-</div>
+</div> -->
 <div class="content">
 <canvas class="fireworks"></canvas>
 <div class="main-logo">
@@ -51,6 +51,8 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
+        		<!-- <img src="assets/images/generic-loader.svg" id="sponsors-loader" class="generic-loader"> -->
+
                  <iframe src="./sponsors/index.html" id="sponsorsFrame"  onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" style="border:none" ></iframe>
         </div>
     </div>
@@ -59,6 +61,7 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
+        		<img src="assets/images/generic-loader.svg" id="team-loader" class="generic-loader">
                  <iframe id="teamFrame"  onload="this.width=window.innerWidth;this.height=window.innerHeight+200" style="border:none" ></iframe>
         </div>
     </div>
@@ -67,6 +70,8 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
+        		<img src="assets/images/generic-loader.svg" id="events-loader" class="generic-loader">
+
                  <iframe  scrolling="no" id="eventsFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
         </div>
     </div>
@@ -75,6 +80,8 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
+        		<img src="assets/images/generic-loader.svg" id="pro-loader" class="generic-loader">
+
                  <iframe  scrolling="no" id="proFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
         </div>
     </div>
@@ -100,11 +107,12 @@
 		modalTarget: 'sponsorsModal'
 	});
 	$('#boat-main').animatedModal({
-		color:'transparent',
+		color:'black',
 		modalTarget: 'teamModal'
+
 	});
 	$('#balloon').animatedModal({
-		color:'transparent',
+		color:'white',
 		modalTarget: 'eventsModal'
 		// left: '5%',
 		// width:'90%'
@@ -124,28 +132,37 @@
     $('#balloon').on('click', function(){
     	console.log('frame frame');
     	if(!isEventsModalOpen) {
-    	$('#eventsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/events-all/index.html').load('https://cosmiccoder96.github.io/Effe17/events-all/index.html');
+    	$('#eventsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/events-all/index.html')
+    	$('#eventsFrame').on('load', function(){
+    		$('#events-loader').hide()
+    	});
     	isEventsModalOpen=true
     	}
     });
     $('#boat-main').on('click', function(){
     	console.log('frame frame');
     	if(!isTeamModalOpen) {
-    	$('#teamFrame').attr('src','https://cosmiccoder96.github.io/Effe17/team/index.html').load('https://cosmiccoder96.github.io/Effe17/team/index.html');
+    	$('#teamFrame').attr('src','https://cosmiccoder96.github.io/Effe17/team/index.html');
+    	$('#teamFrame').on('load', function(){
+    		$('#team-loader').hide();
+    	});
     	isTeamModalOpen=true
     	}
     });
     $('#balloon2').on('click', function(){
     	console.log('frame frame');
     	if(!isProModalOpen) {
-    	$('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html').load('https://cosmiccoder96.github.io/Effe17/pro/index.html');
+    	$('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html');
+    	$('#proFrame').on('load', function(){
+    		$('#pro-loader').hide();
+    	});
     	isProModalOpen=true
     	}
     });
 	$(window).on('load', function() { 
 		console.log("Hello");
 		$('.content').css("visibility","visible");
-		$('.loader').hide();
+		// $('.loader').hide();
 	 });
 
 </script>
