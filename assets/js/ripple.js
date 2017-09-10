@@ -159,8 +159,13 @@ function waterRipple(img) {
     }, 700);
   
 };
+var h = window.innerHeight;
+var w = window.innerWidth;
 function setCanvasSize() {
     console.log("resize happened");
+    console.log(w,h);
+    console.log(window.innerWidth,window.innerHeight);
+    if(Math.abs(h-window.innerHeight)>20 || Math.abs(w-window.innerWidth) > 20)
     location.reload();  
 }
 window.addEventListener('resize', setCanvasSize, false);
