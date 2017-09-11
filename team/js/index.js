@@ -18,6 +18,8 @@ $(window).on('load', function(){
   $('.icon').on('click', function(){
     $('.icon').removeClass('active').addClass('inactive');
     $(this).removeClass('inactive').addClass('active');
+    $('.inner-wrapper').animate({
+      scrollTop: 0
+    }, 500);
   });
-
 });
