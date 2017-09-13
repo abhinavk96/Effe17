@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="assets/styles/animate.min.css">
-	<link rel="stylesheet" href="assets/styles/index.css">
-	<link rel="stylesheet" href="assets/styles/plane.css">
-	<link rel="stylesheet" href="assets/styles/balloon.css">
-	<meta name="viewport" content="width=device-width, height=device-height">
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/tweenMax.js"></script>
-	<script src="assets/js/ripple.js"></script>
-	<script src="./pace/pace.js"></script>
-  <link href="./pace/themes/blue/pace-theme-barber-shop.css" rel="stylesheet" />
+    <title>Effervescence-2017 - An Indian Affair</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Website of Effervescence'17, The Cultural fest of IIIT Allahabad, Most exciting fest of North India">
+    <meta name="keywords" content="fest, cultural, effervescence, 2017, IIIT, Allahabad">
+    <meta name="author" content="CosmicCoder96">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:site_name" content="Effervescence-2017">
+    <meta property="og:url" content="https://effe.org.in" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Effervescence - 2017" />
+    <meta property="og:description" content="Effervescence is the Cultural Fest of Indian Institute of Information Technology, Allahabad. It will be held from 12th - 15th October 2017"/>
+    <meta property="article:publisher" content="https://www.facebook.com/pg/effervescence.iiita">
+    <meta property="article:author" content="https://www.facebook.com/pg/effervescence.iiita">
+    <meta property="og:image" content="assets/images/effe-poster.png" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@goeffervescence">
+    <meta name="twitter:site" content="https://effe.org.in">
+    <meta name="twitter:title" content="Effervescence-2017">
+    <meta name="twitter:description" content="Effervescence is the Cultural Fest of Indian Institute of Information Technology, Allahabad. It will be held from 12th - 15th October 2017">
+    <meta name="twitter:image:src" content="assets/images/effe-poster.png">
+    <meta name="twitter:image:width" content="312">
+    <meta name="twitter:image:height" content="141">
+
+    <link rel="stylesheet" href="assets/styles/animate.min.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/plane.css">
+    <link rel="stylesheet" href="assets/styles/balloon.css">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/tweenMax.js"></script>
+    <script src="assets/js/ripple.js"></script>
+    <script src="./pace/pace.js"></script>
+    <link href="./pace/themes/blue/pace-theme-barber-shop.css" rel="stylesheet" />
 </head>
 <body>
 <!-- <div class="loader">
-	<iframe src="./preloader/index.html" onload="this.width=window.innerWidth;this.height=window.innerHeight;" style="border:none" ></iframe>
+    <iframe src="./preloader/index.html" onload="this.width=window.innerWidth;this.height=window.innerHeight;" style="border:none" ></iframe>
 
 </div> -->
 <div class="content">
 <canvas class="fireworks"></canvas>
 <div class="main-logo">
-	
+    
 </div>
 <!-- <div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
-	<div id="plane" class="plane-elements">
-		<div class="direction">
-			<div class="element propeller"></div>
-			<div class="element plane"></div>
-			<div class="element banner">
-				<div class="banner-text">Contact Us Now!?</div>
-			</div>
-			<div class="element banner-tip"></div>
-		</div>
-	</div>
+    <div id="plane" class="plane-elements">
+        <div class="direction">
+            <div class="element propeller"></div>
+            <div class="element plane"></div>
+            <div class="element banner">
+                <div class="banner-text">Contact Us Now!?</div>
+            </div>
+            <div class="element banner-tip"></div>
+        </div>
+    </div>
 </div> -->
 <a href="https://effe.org.in/multicity"><img src="assets/images/multicity.png" class="multicity"></a>
 <a href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
@@ -45,12 +70,12 @@
 <a id="boat-main" href="#teamModal" class="boat">
 </a>
 <a id="balloon" href="#eventsModal" class="balloon-elements">
-	<div class="direction">
-		<div class="element balloon"></div>
-	</div>
+    <div class="direction">
+        <div class="element balloon"></div>
+    </div>
 </a>
 <a id="balloon2" href="#proModal" class="pro-balloon">
-	
+    
 </a>
 <img class="main-content" src="assets/images/taj-upper.png">
 <div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
@@ -59,7 +84,7 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content" >
-        		<!-- <img src="assets/images/generic-loader.svg" id="sponsors-loader" class="generic-loader"> -->
+                <!-- <img src="assets/images/generic-loader.svg" id="sponsors-loader" class="generic-loader"> -->
 
                  <iframe src="./sponsors/index.html" id="sponsorsFrame"  onload="this.width=window.innerWidth;this.height=window.innerHeight+500;" style="border:none" ></iframe>
         </div>
@@ -69,7 +94,7 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
-        		<img src="assets/images/generic-loader.svg" id="team-loader" class="generic-loader">
+                <img src="assets/images/generic-loader.svg" id="team-loader" class="generic-loader">
                  <iframe id="teamFrame"  onload="this.width=window.innerWidth;this.height=window.innerHeight+200" style="border:none" ></iframe>
         </div>
     </div>
@@ -78,7 +103,7 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
-        		<img src="assets/images/generic-loader.svg" id="events-loader" class="generic-loader">
+                <img src="assets/images/generic-loader.svg" id="events-loader" class="generic-loader">
 
                  <iframe  scrolling="no" id="eventsFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
         </div>
@@ -88,7 +113,7 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content">
-        		<img src="assets/images/generic-loader.svg" id="pro-loader" class="generic-loader">
+                <img src="assets/images/generic-loader.svg" id="pro-loader" class="generic-loader">
 
                  <iframe  scrolling="no" id="proFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
         </div>
@@ -101,78 +126,78 @@
 <script src="assets/js/plane.js"></script>
 <script src="assets/js/balloon.js"></script>
 <script>
-	$(document).ready(function(){
-		if(window.innerHeight > window.innerWidth){
+    $(document).ready(function(){
+        if(window.innerHeight > window.innerWidth){
     console.log("Please use Landscape!");
     $('.content').hide();
     $('body').css("background","url('assets/images/rotate-device.png') no-repeat");
 
 }
-	});
+    });
 
-	$('#kite-large').animatedModal({
-		color:'transparent',
-		modalTarget: 'sponsorsModal'
-	});
-	$('#boat-main').animatedModal({
-		color:'black',
-		modalTarget: 'teamModal'
+    $('#kite-large').animatedModal({
+        color:'transparent',
+        modalTarget: 'sponsorsModal'
+    });
+    $('#boat-main').animatedModal({
+        color:'black',
+        modalTarget: 'teamModal'
 
-	});
-	$('#balloon').animatedModal({
-		color:'white',
-		modalTarget: 'eventsModal'
-		// left: '5%',
-		// width:'90%'
-	});
-	$('#balloon2').animatedModal({
-		color:'transparent',
-		modalTarget: 'proModal'
-		// left: '5%',
-		// width:'90%'
-	});
-	var isEventsModalOpen=false;
+    });
+    $('#balloon').animatedModal({
+        color:'white',
+        modalTarget: 'eventsModal'
+        // left: '5%',
+        // width:'90%'
+    });
+    $('#balloon2').animatedModal({
+        color:'transparent',
+        modalTarget: 'proModal'
+        // left: '5%',
+        // width:'90%'
+    });
+    var isEventsModalOpen=false;
     var isTeamModalOpen=false;
     var isProModalOpen=false;
 
 
     $('#balloon').on('click', function(){
-    	console.log('frame frame');
-    	if(!isEventsModalOpen) {
-    	$('#eventsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/events-all/index.html')
-    	$('#eventsFrame').on('load', function(){
-    		$('#events-loader').hide()
-    	});
-    	isEventsModalOpen=true
-    	}
+        console.log('frame frame');
+        if(!isEventsModalOpen) {
+        $('#eventsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/events-all/index.html')
+        $('#eventsFrame').on('load', function(){
+            $('#events-loader').hide()
+        });
+        isEventsModalOpen=true
+        }
     });
     $('#boat-main').on('click', function(){
-    	console.log('frame frame');
-    	if(!isTeamModalOpen) {
-    	$('#teamFrame').attr('src','https://cosmiccoder96.github.io/Effe17/team/index.html');
-    	$('#teamFrame').on('load', function(){
-    		$('#team-loader').hide();
-    	});
-    	isTeamModalOpen=true
-    	}
+        console.log('frame frame');
+        if(!isTeamModalOpen) {
+        $('#teamFrame').attr('src','https://cosmiccoder96.github.io/Effe17/team/index.html');
+        $('#teamFrame').on('load', function(){
+            $('#team-loader').hide();
+        });
+        isTeamModalOpen=true
+        }
     });
     $('#balloon2').on('click', function(){
-    	console.log('frame frame');
-    	if(!isProModalOpen) {
-    	$('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html');
-    	$('#proFrame').on('load', function(){
-    		$('#pro-loader').hide();
-    	});
-    	isProModalOpen=true
-    	}
+        console.log('frame frame');
+        if(!isProModalOpen) {
+        $('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html');
+        $('#proFrame').on('load', function(){
+            $('#pro-loader').hide();
+        });
+        isProModalOpen=true
+        }
     });
-	$(window).on('load', function() { 
-		console.log("Hello");
-		$('.content').css("visibility","visible");
-		var x = $(".main-content").offset().top + $(".main-content").height(); 
-   		 $('.ripple-wrap').css("top",x+"px");
-		// $('.loader').hide();
-	 });
+    $(window).on('load', function() { 
+        console.log("Hello");
+        $('.content').css("visibility","visible");
+        var x = $(".main-content").offset().top + $(".main-content").height(); 
+         $('.ripple-wrap').css("top",x+"px");
+        // $('.loader').hide();
+     });
 
 </script>
 </html>
