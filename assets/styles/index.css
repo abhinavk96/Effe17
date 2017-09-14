@@ -107,7 +107,7 @@ width:8vw;
 height:auto;
 position:fixed;
 top:2%;
-right:8vw;
+right:0;
  -ms-transform: rotate(-20deg); /* IE 9 */
     -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
     transform: rotate(-20deg);
