@@ -98,9 +98,9 @@
             <img src="assets/images/close-icon.png" class="closebt">
         </div>
         <div class="modal-content" >
-                <!-- <img src="assets/images/generic-loader.svg" id="sponsors-loader" class="generic-loader"> -->
+                <img src="assets/images/generic-loader.svg" id="sponsors-loader" class="generic-loader">
 
-                 <iframe src="./sponsors/index.html" id="sponsorsFrame"  onload="this.width=window.innerWidth;this.height=window.innerHeight+500;" style="border:none" ></iframe>
+                 <iframe  id="sponsorsFrame"  onload="this.width=window.innerWidth;this.height=window.innerHeight+1000;" style="border:none" ></iframe>
         </div>
     </div>
     <div id="teamModal" class="genericModal">
@@ -150,7 +150,7 @@
     });
 
     $('#kite-large').animatedModal({
-        color:'transparent',
+        color:'white',
         modalTarget: 'sponsorsModal'
     });
     $('#boat-main').animatedModal({
@@ -173,6 +173,8 @@
     var isEventsModalOpen=false;
     var isTeamModalOpen=false;
     var isProModalOpen=false;
+    var isSponsorsModalOpen=false;
+
 
 
     $('#balloon').on('click', function(){
@@ -183,6 +185,16 @@
             $('#events-loader').hide()
         });
         isEventsModalOpen=true
+        }
+    });
+    $('#kite-large').on('click', function(){
+        // console.log('frame frame');
+        if(!isSponsorsModalOpen) {
+        $('#sponsorsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/sponsors/index.html')
+        $('#sponsorsFrame').on('load', function(){
+            $('#sponsors-loader').hide()
+        });
+        isSponsorsModalOpen=true
         }
     });
     $('#boat-main').on('click', function(){
