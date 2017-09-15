@@ -60,21 +60,6 @@
         </div>
     </a>
 </div>
-<!-- =======
-<div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
-	<div id="plane" class="plane-elements">
-		<div class="direction">
-			<div class="element propeller"></div>
-			<div class="element plane"></div>
-			<div class="element banner">
-				<div class="banner-text">Contact Us Now!?</div>
-			</div>
-			<div class="element banner-tip"></div>
-		</div>
-	</div>
-</div>
->>>>>>> Add some of the sponsors -->
-<!-- <a href="https://effe.org.in/multicity"><img src="assets/images/multicity.png" class="multicity"></a> -->
 <a href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
 <a href="https://effe.org.in/register"><img src="assets/images/firki.png" class="firki"></a>
 
@@ -173,14 +158,10 @@
     $('#balloon').animatedModal({
         color:'white',
         modalTarget: 'eventsModal'
-        // left: '5%',
-        // width:'90%'
     });
     $('#balloon2').animatedModal({
         color:'transparent',
         modalTarget: 'proModal'
-        // left: '5%',
-        // width:'90%'
     });
 
     var isEventsModalOpen=false;
@@ -201,7 +182,6 @@
         }
     });
     $('#kite-large').on('click', function(){
-        // console.log('frame frame');
         if(!isSponsorsModalOpen) {
         $('#sponsorsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/sponsors/index.html')
         $('#sponsorsFrame').on('load', function(){
@@ -231,7 +211,6 @@
         }
     });
     $(window).on('load', function() { 
-        console.log("Hello");
         setTimeout(function() {
              $('.loader').fadeOut("slow", function(){
                 $('.loader').hide();
