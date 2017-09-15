@@ -182,6 +182,7 @@
         // left: '5%',
         // width:'90%'
     });
+
     var isEventsModalOpen=false;
     var isTeamModalOpen=false;
     var isProModalOpen=false;
@@ -231,11 +232,12 @@
     });
     $(window).on('load', function() { 
         console.log("Hello");
-        $('.loader').hide();
+        setTimeout(function() {
+             $('.loader').hide();
         $('.content').css("visibility","visible");
         var x = $(".main-content").offset().top + $(".main-content").height(); 
          $('.ripple-wrap').css("top",x+"px");
-        // $('.loader').hide();
+        }, 5000);
      });
 
 </script>
