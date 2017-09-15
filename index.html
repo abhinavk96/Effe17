@@ -233,8 +233,12 @@
     $(window).on('load', function() { 
         console.log("Hello");
         setTimeout(function() {
-             $('.loader').hide();
-        $('.content').css("visibility","visible");
+             $('.loader').fadeOut("slow", function(){
+                $('.loader').hide();
+             });
+        $('.content').fadeIn("slow", function(){
+            $('.content').css('visibility','visible');
+        });
         var x = $(".main-content").offset().top + $(".main-content").height(); 
          $('.ripple-wrap').css("top",x+"px");
         }, 5000);
