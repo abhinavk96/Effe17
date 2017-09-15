@@ -35,21 +35,21 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/tweenMax.js"></script>
     <script src="assets/js/ripple.js"></script>
-    <script src="./pace/pace.js"></script>
-    <link href="./pace/themes/blue/pace-theme-barber-shop.css" rel="stylesheet" />
+<!--     <script src="./pace/pace.js"></script>
+    <link href="./pace/themes/blue/pace-theme-barber-shop.css" rel="stylesheet" /> -->
 </head>
 <body>
-<!-- <div class="loader">
+<div class="loader">
     <iframe src="./preloader/index.html" onload="this.width=window.innerWidth;this.height=window.innerHeight;" style="border:none" ></iframe>
 
-</div> -->
-<div class="content">
+</div>
+<div class="content" style="visibility: hidden">
 <canvas class="fireworks"></canvas>
 <div class="main-logo">
     
 </div>
-<!-- <div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
-    <div id="plane" class="plane-elements">
+<div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
+    <a id="plane" href="#contactModal" class="plane-elements">
         <div class="direction">
             <div class="element propeller"></div>
             <div class="element plane"></div>
@@ -58,8 +58,8 @@
             </div>
             <div class="element banner-tip"></div>
         </div>
-    </div>
-</div> -->
+    </a>
+</div>
 <!-- =======
 <div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
 	<div id="plane" class="plane-elements">
@@ -76,7 +76,7 @@
 >>>>>>> Add some of the sponsors -->
 <!-- <a href="https://effe.org.in/multicity"><img src="assets/images/multicity.png" class="multicity"></a> -->
 <a href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
-<!-- <a href="https://effe.org.in/register"><img src="assets/images/firki.png" class="firki"></a> -->
+<a href="https://effe.org.in/register"><img src="assets/images/firki.png" class="firki"></a>
 
 
 <a id="kite-large" href="#sponsorsModal" class="kite">
@@ -122,6 +122,14 @@
                  <iframe  scrolling="no" id="eventsFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
         </div>
     </div>
+    <div id="contactModal" class="genericModal">
+        <div id="closebt-container" class="close-contactModal"> 
+            <img src="assets/images/close-icon.png" class="closebt">
+        </div>
+        <div class="modal-content">
+                 <iframe  src="cosmicCoder96.github.io/Effe17/contact" scrolling="no" id="sponsorFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
+        </div>
+    </div>
     <div id="proModal" class="genericModal">
         <div id="closebt-container" class="close-proModal"> 
             <img src="assets/images/close-icon.png" class="closebt">
@@ -141,18 +149,22 @@
 <script src="assets/js/balloon.js"></script>
 <script>
     $(document).ready(function(){
-        if(window.innerHeight > window.innerWidth){
+        if(window.innerHeight > window.innerWidth) {
     console.log("Please use Landscape!");
     $('.content').hide();
     $('body').css("background","url('assets/images/rotate-device.png') no-repeat");
-
-}
+        }
     });
 
     $('#kite-large').animatedModal({
         color:'white',
         modalTarget: 'sponsorsModal'
     });
+    $('#plane').animatedModal({
+        color:'black',
+        modalTarget: 'contactModal'
+    });
+
     $('#boat-main').animatedModal({
         color:'black',
         modalTarget: 'teamModal'
@@ -219,6 +231,7 @@
     });
     $(window).on('load', function() { 
         console.log("Hello");
+        $('.loader').hide();
         $('.content').css("visibility","visible");
         var x = $(".main-content").offset().top + $(".main-content").height(); 
          $('.ripple-wrap').css("top",x+"px");
