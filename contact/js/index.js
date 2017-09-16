@@ -23,6 +23,10 @@ $(".fa-envelope-square").hover(function() {
   $(".gpinfo").toggle();
   $(".welcome").hide();
 });
+$('.fa-phone-square').on('click', function(){
+  console.log('hello');
+   $("html, body").animate({ scrollTop: 1000 }, 1000);
+})
 
 $(".fa-phone-square").hover(function() {
   $(".phinfo").toggle();
