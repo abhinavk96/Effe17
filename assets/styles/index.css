@@ -165,7 +165,7 @@ transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
 	height:20vh;
 	z-index: 100;
 	opacity:0.9;
-	width:16vw;
+	width:12vw;
 	background: url('../images/boat-text-team.png');
 	background-size: contain;
 	background-repeat: no-repeat;

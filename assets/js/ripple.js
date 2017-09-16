@@ -76,7 +76,7 @@ function waterRipple(img) {
         var boatRect = $('#boat-main').offset();
         var x = boatRect.left;
         var y = boatRect.top;
-        disturb(x,y);
+        disturb(x+100,y-50);
     }
     /**
      * Generates new ripples
