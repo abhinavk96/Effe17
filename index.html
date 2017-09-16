@@ -61,7 +61,7 @@
     </a>
 </div>
 <a href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
-<a href="https://effe.org.in/register"><img src="assets/images/firki.png" class="firki"></a>
+<a href="https://effe.org.in/register"><img src="assets/images/firki.png" class="firki"><img src="assets/images/about-us.png" class="about-us" style=""></a>
 
 
 <a id="kite-large" href="#sponsorsModal" class="kite">
@@ -136,7 +136,7 @@
     $(document).ready(function(){
         if(window.innerHeight > window.innerWidth) {
     console.log("Please use Landscape!");
-    $('.content').hide();
+    $('.contenus').hide();
     $('body').css("background","url('assets/images/rotate-device.png') no-repeat");
         }
     });
@@ -218,9 +218,18 @@
         $('.content').fadeIn("slow", function(){
             $('.content').css('visibility','visible');
         });
+         // $('.about-us').hide();
+   
+        }, 500);
         var x = $(".main-content").offset().top + $(".main-content").height(); 
          $('.ripple-wrap').css("top",x+"px");
-        }, 5000);
+        $('.firki').hover(function(){
+            console.log(12)
+            $('.about-us').css('top', "4%");
+        }, function(){
+            $('.about-us').css('top','-10%');
+
+        })
      });
 
 </script>
