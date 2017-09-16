@@ -190,16 +190,16 @@ i.fa-twitter:hover ~ .welcome {
   display: none;
 }
 
-i.fa-google-plus:hover {
+i.fa-envelope-square:hover {
   color: #d34836;
   transform: rotatez(30deg) scale(1.2, 1.2);
 }
 
-i.fa-google-plus:hover ~ .welcome {
+i.fa-envelope-square:hover ~ .welcome {
   display: none;
 }
 
-i.fa-google-plus:hover ~ .gpinfo {
+i.fa-envelope-square:hover ~ .gpinfo {
   display: block;
 }
 

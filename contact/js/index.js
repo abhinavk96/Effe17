@@ -19,7 +19,7 @@ $(".fa-twitter").hover(function() {
   $(".welcome").hide();
 });
 
-$(".fa-google-plus").hover(function() {
+$(".fa-envelope-square").hover(function() {
   $(".gpinfo").toggle();
   $(".welcome").hide();
 });
