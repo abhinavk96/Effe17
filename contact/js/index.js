@@ -24,8 +24,8 @@ $(".fa-google-plus").hover(function() {
   $(".welcome").hide();
 });
 
-$(".fa-linkedin").hover(function() {
-  $(".liinfo").toggle();
+$(".fa-phone-square").hover(function() {
+  $(".phinfo").toggle();
   $(".welcome").hide();
 });
 

@@ -16,7 +16,7 @@ body.lightmode {
 .lightmode .iginfo,
 .lightmode .twinfo,
 .lightmode .gpinfo,
-.lightmode .liinfo,
+.lightmode .phinfo,
 .lightmode .ytinfo {
   color: black;
 }
@@ -107,15 +107,15 @@ i {
   color: #d34836;
 }
 
-.liinfo {
+.phinfo {
   display: none;
   color: white;
   font-size: 20px;
 }
 
-.liinfo h2,
-.liinfo span {
-  color: #0077B5;
+.phinfo h2,
+.phinfo span {
+  color: #3CB371;
 }
 
 .ytinfo {
@@ -155,6 +155,7 @@ i.fa-facebook-square:hover {
   color: #3b5998;
   transform: rotatez(30deg) scale(1.2, 1.2);
 }
+
 
 i.fa-facebook-square:hover ~ .welcome {
   display: none;
@@ -199,16 +200,16 @@ i.fa-google-plus:hover ~ .gpinfo {
   display: block;
 }
 
-i.fa-linkedin:hover {
-  color: #0077B5;
+i.fa-phone-square:hover {
+  color: #3CB371;
   transform: rotatez(30deg) scale(1.2, 1.2);
 }
 
-i.fa-linkedin:hover ~ .welcome {
+i.fa-phone-square:hover ~ .welcome {
   display: none;
 }
 
-i.fa-linkedin:hover ~ .liinfo {
+i.fa-phone-square:hover ~ .phinfo {
   display: block;
 }
 
