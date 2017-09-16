@@ -1,0 +1,226 @@
+* {
+  font-family: "Coming Soon";
+}
+
+body {
+  background: black;
+}
+
+/* LIGHT-MODE*/
+
+body.lightmode {
+  background-color: white;
+}
+
+.lightmode p,
+.lightmode .iginfo,
+.lightmode .twinfo,
+.lightmode .gpinfo,
+.lightmode .liinfo,
+.lightmode .ytinfo {
+  color: black;
+}
+
+
+/*NAV BUTTONS */
+
+button {
+  margin: 1%;
+   height: auto;
+  width: 150px;
+}
+
+.menu-button a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+
+i {
+  padding: 22px;
+  margin-top: 15%;
+}
+
+
+/* HIDDEN CONTENT */
+
+.fbinfo {
+  display: none;
+  color: white;
+  font-family: "Coming Soon";
+  font-size: 20px;
+}
+
+.fbinfo h2 {
+  color: #3b5998;
+}
+
+.fbinfo p {
+  line-height: 1.5em;
+}
+
+.fbcolor {
+  color: #3b5998;
+}
+
+.iginfo {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+.iginfo h2 {
+  color: #9b6954;
+}
+
+.igcolor {
+  color: #9b6954
+}
+
+.twinfo {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+.twinfo h2 {
+  color: #0084b4
+}
+
+.twcolor {
+  color: #0084b4
+}
+
+.gpinfo {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+.gpinfo h2,
+.gpinfo span {
+  color: #d34836;
+}
+
+.gocolor {
+  color: #d34836;
+}
+
+.liinfo {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+.liinfo h2,
+.liinfo span {
+  color: #0077B5;
+}
+
+.ytinfo {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+.ytinfo h2,
+.ytinfo span {
+  color: #e52d27;
+}
+
+
+/* LIGHT/DARK MODE */
+
+.yellow {
+  background: white;
+}
+
+.lightfont {
+  color: black;
+}
+
+
+/* hover effects */
+
+.social-links {
+  transition: 0.5s ease-out;
+}
+
+i.fa-facebook-square:hover ~ .fbinfo {
+  display: block;
+}
+
+i.fa-facebook-square:hover {
+  color: #3b5998;
+  transform: rotatez(30deg) scale(1.2, 1.2);
+}
+
+i.fa-facebook-square:hover ~ .welcome {
+  display: none;
+}
+
+i.fa-camera-retro:hover {
+  color: #9b6954;
+  transform: rotatez(30deg) scale(1.2, 1.2);
+}
+
+i.fa-camera-retro:hover ~ .welcome {
+  display: none;
+}
+
+i.fa-camera-retro:hover ~ .iginfo {
+  display: block;
+}
+
+i.fa-twitter:hover {
+  color: #0084b4;
+  transform: rotatez(30deg) scale(1.2, 1.2);
+}
+
+i.fa-twitter:hover ~ .twinfo {
+  display: block;
+}
+
+i.fa-twitter:hover ~ .welcome {
+  display: none;
+}
+
+i.fa-google-plus:hover {
+  color: #d34836;
+  transform: rotatez(30deg) scale(1.2, 1.2);
+}
+
+i.fa-google-plus:hover ~ .welcome {
+  display: none;
+}
+
+i.fa-google-plus:hover ~ .gpinfo {
+  display: block;
+}
+
+i.fa-linkedin:hover {
+  color: #0077B5;
+  transform: rotatez(30deg) scale(1.2, 1.2);
+}
+
+i.fa-linkedin:hover ~ .welcome {
+  display: none;
+}
+
+i.fa-linkedin:hover ~ .liinfo {
+  display: block;
+}
+
+i.fa-youtube:hover {
+  color: #e52d27;
+  transform: rotatez(30deg) scale(1.2, 1.2);
+}
+
+i.fa-youtube:hover ~ .welcome {
+  display: none;
+}
+
+i.fa-youtube:hover ~ .ytinfo {
+  display: block;
+}
