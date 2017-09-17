@@ -177,13 +177,13 @@ transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
 #balloon2 {
 	position: absolute !important;
 	top: 25%;
-	right:30%;
+	left: 12%;
 	display: block;
 	margin-left: 5vw;
-	height:16vh;
+	height:22vh;
 	z-index:0;
 	opacity:0.9;
-	width:14vh;
+	width:20vh;
 	background: url('../images/balloon-2-text.png');
 	background-size: contain;
 	background-repeat: no-repeat;

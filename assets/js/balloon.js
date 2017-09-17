@@ -28,7 +28,7 @@ function R(min, max) {
             repeat: 0,
             delay: 0.5
         });
-        TweenMax.set('.balloon-elements', { css: {'left': '15%'} });
+        TweenMax.set('.balloon-elements', { css: {'right': '25%'} });
         TweenMax.set('.balloon-elements', { scale:0.4 });
 
 
