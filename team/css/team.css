@@ -1,0 +1,97 @@
+#team{flex-direction:column;background:url("../img/header/Starsbackground1.png") repeat-y;background-size:100%;color:#fff;height:120vh;}
+.teamTitle{flex:1;}
+.teamTitle h1{font-family:'Eczar', serif;font-size:5rem;text-align:center;margin:0;color:#f0f0f0;}
+.teamContainer{display:flex;justify-content:space-around;flex-direction:row;height:90%;width:100%;flex:9;margin:0 auto;border:2pt solid white;}
+.teamCardTitle{font-size:1rem;font-family:'Work Sans', sans-serif;transition:all 500ms ease;font-weight:500;}
+@media (orientation:portrait){.teamContainer{flex-direction:column;}
+.teamSections.open{flex:20;}
+.teamCardTitle{font-size:2.5rem;font-family:'Work Sans', sans-serif;}
+}
+.teamSections{cursor: pointer;transition:all 0.5s ease;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border-left:1pt solid white;border-right:1pt solid white;}
+.teamSections:nth-child(odd){background-color:rgba(0,0,0,0.2);}
+.teamSections:nth-child(even){background-color:transparent;}
+.teamSections p{color:#E4FDE1;text-transform:uppercase;font-size:2em;text-shadow:0 1px 2px rgba(0,0,0, .74);}
+.teamSections.open{flex:8;font-size:2.6em;}
+.teamSections.open .teamMemberContainer{display:flex;flex-wrap:wrap;flex:1;justify-content:center;align-items:center;}
+.teamMemberContainer{display:none;flex:0;width:100%;perspective:2000px;}
+.teamMember{flex:1;min-width:60%;max-width:60%;margin:5pt;display:flex;justify-content:center;align-items:center;transition:all 600ms ease;cursor:pointer;}
+.teamMember1{flex:1;min-width:45%;max-width:45%;margin:5pt;display:flex;justify-content:center;align-items:center;transition:all 600ms ease;cursor:pointer;}
+.teamSections:nth-child(7) .teamMember, .teamSections:nth-child(8) .teamMember{min-width:33%;max-width:33%;}
+.flipped{transform:rotateY(180deg);}
+.teamMember.flipped img{visibility:hidden;}
+.teamMember1.flipped img{visibility:hidden;}
+.teamMemberData,
+.teamMemberOverlay{text-align:center;}
+img,
+.teamMemberOverlay{transition:all 150ms ease-in;z-index:1;}
+.teamMember.flipped .teamMemberData{transform:scale(1.02);}
+.teamMember.flipped .teamMemberOverlay{z-index:0;}
+.teamMember1.flipped .teamMemberData{transform:scale(1.02);}
+.teamMember1.flipped .teamMemberOverlay{z-index:0;}
+.teamMemberData, .teamMemberBack{position:relative;margin:.5%;overflow:hidden;box-shadow:0px 0px 10pt #000;transition:all 500ms ease; background: rgb(30,30,46);}
+.teamMemberData:hover{transform:scale(1.02);}
+.teamMemberData img{width:100%;height:100%;}
+.teamMemberData .teamMemberOverlay{position:absolute;top:0;left:0;bottom:0;width:100%;background:rgba(0,0,0,0.5);color:transparent;opacity:0;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.teamMemberData:hover .teamMemberOverlay{opacity:1;}
+.teamMemberData:hover .teamMemberPhoto{-webkit-filter:blur(50px);filter:blur(50px);}
+.teamMemberData:hover > .teamMemberName{opacity: 0;}
+.teamMemberSocial img{width: 80%; height:80%;}
+.teamMemberName, .teamMemberContactText{font-size:1.5rem;font-weight:200;font-family:'Work Sans', sans-serif;flex:1;display:flex;justify-content:center;align-items:center;color:white;}
+.teamMemberName .bold, .team{font-weight:600;}
+.teamMemberName .underline{color:transparent;text-shadow:0 0 #fff, .08em 0 0 transparent, 0 0, -.08em 0 0 transparent;background:-webkit-linear-gradient(#fff, #fff) center 1.09em no-repeat;background:linear-gradient(#fff, #fff) center 1.09em no-repeat;background-size:0% 1px;-webkit-transition:.5s ease;transition:.5s ease;}
+.teamMemberData:hover .teamMemberName .underline{background-size:100% 1px;}
+.teamMember.flipped .teamMemberData:hover .teamMemberName .underline{background-size:0% 1px;}
+.teamMember1.flipped .teamMemberData:hover .teamMemberName .underline{background-size:0% 1px;}
+.teamMemberInfo{color:white;font-family:'Work Sans', sans-serif;font-size:0.75rem;align-self:center;flex:1;margin:10%;display:flex;justify-content:flex-end;align-items:flex-end;opacity:0;}
+.teamMemberData:hover .teamMemberInfo{animation:fadeIn 500ms;animation-fill-mode:forwards;animation-delay:500ms;}
+.teamSections.open .teamCardTitle{font-size:2rem;margin:10pt;font-weight:400;}
+@keyframes fadeIn{from{opacity:0;}
+to{opacity:1;}
+}
+.teamMemberBack{display:flex;position:absolute;top:0;bottom:0;left:0;right:0;transform:rotateY(180deg);z-index:0;background-color:#000;animation:hideBack 250ms;animation-fill-mode:forwards;}
+.teamMember.flipped .teamMemberBack{animation:displayBack 250ms;display:flex;animation-fill-mode:forwards;z-index:1;}
+@keyframes displayBack{0%{opacity:0;}
+80%{opacity:0;}
+100%{opacity:1;}
+}
+@keyframes hideBack{0%{opacity:1;}
+99%{opacity:1;}
+100%{opacity:0;}
+}
+.teamMember1.flipped .teamMemberBack{animation:displayBack 250ms;display:flex;animation-fill-mode:forwards;z-index:1;}
+@keyframes displayBack{0%{opacity:0;}
+80%{opacity:0;}
+100%{opacity:1;}
+}
+@keyframes hideBack{0%{opacity:1;}
+99%{opacity:1;}
+100%{opacity:0;}
+}
+.teamMember.flipped .teamMemberSocial img{visibility:visible;flex:1;height:32pt;width:32pt;margin:5pt;cursor:pointer;}
+.teamMember.flipped .teamMemberData:hover .teamMemberPhoto{-webkit-filter:blur(0px);filter:blur(0px);}
+.teamMember1.flipped .teamMemberSocial img{visibility:visible;flex:1;height:32pt;width:32pt;margin:5pt;cursor:pointer;}
+.teamMember1.flipped .teamMemberData:hover .teamMemberPhoto{-webkit-filter:blur(0px);filter:blur(0px);}
+.teamMemberBack{flex-direction:column;align-items:center;}
+.teamMemberContactText{flex:1;display:flex;align-items:center;}
+.teamMemberContactNumber{flex:1;display:flex;align-items:center;font-size:1.1rem;font-family:'Raleway', sans-serif;font-weight:200;color:white;}
+.teamMemberSocial{flex:1;display:flex;align-items:center;justify-content:space-around;}
+.teamMemberSocial a img{filter:none;}
+.teamMemberSocial a img:hover{filter:none !important;}
+.noPhoto{display:none;}
+.teamSections.open .teamCardTitle{animation:titleFadeIn 800ms;animation-fill-mode:forwards;}
+@keyframes titleFadeIn{0%{opacity:0;}
+62%{opacity:0;}
+100%{opacity:1;}
+}
+@keyframes membersFadeIn{0%{opacity:0;}
+100%{opacity:1;}
+}
+.teamSections.open .teamMember{opacity:0;animation:membersFadeIn 300ms;animation-fill-mode:forwards;}
+.teamSections.open .teamMember:nth-child(1){animation-delay:800ms;}
+.teamSections.open .teamMember:nth-child(2){animation-delay:950ms;}
+.teamSections.open .teamMember:nth-child(3){animation-delay:1100ms;}
+.teamSections.open .teamMember:nth-child(4){animation-delay:1250ms;}
+.teamSections.open .teamMember:nth-child(5){animation-delay:1400ms;}
+.teamMemberData .teamMemberOverlay .click{position:absolute;top:55%;transform:translate(0 , -50%);width:10%;height:auto;}
+.teamMember.flipped .teamMemberName .underline{background-size:100% 1px !important;}
+.teamMember1.flipped .teamMemberName .underline{background-size:100% 1px !important;}
