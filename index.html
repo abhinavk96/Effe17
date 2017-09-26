@@ -60,15 +60,15 @@
         </div>
     </a>
 </div>
-<a href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
+<a data-0="opacity:1" data-500="opacity:0" href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
 <a ><img src="assets/images/firki.png" class="firki"><img src="assets/images/about-us.png" class="about-us" style=""></a>
 
 
-<a id="kite-large" href="#sponsorsModal" class="kite">
+<a data-0="opacity:1" data-500="opacity:0" id="kite-large" href="#sponsorsModal" class="kite">
 </a>
-<a id="boat-main" href="#teamModal" class="boat">
+<a data-0="opacity:1" data-500="opacity:0" id="boat-main" href="#teamModal" class="boat">
 </a>
-<a id="balloon" href="#eventsModal" class="balloon-elements">
+<a data-0="opacity:1" data-500="opacity:0" id="balloon" href="#eventsModal" class="balloon-elements">
     <div class="direction">
         <div class="element balloon"></div>
     </div>
@@ -76,8 +76,8 @@
 <a id="balloon2" href="#proModal" class="pro-balloon">
     
 </a>
-<img class="main-content" src="assets/images/taj-upper.png">
-<div class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
+<img data-0="opacity:1" data-500="opacity:0" class="main-content" src="assets/images/taj-upper.png">
+<div data-0="opacity:1" data-500="opacity:0" class="ripple-wrap"><img style="opacity:0;margin-left:none" class="ripple-image"  src="assets/images/taj-half.jpg" onload="waterRipple(this);" /></div>
     <div id="sponsorsModal" class="genericModal">
        <div id="closebt-container" class="close-sponsorsModal"> 
             <img src="assets/images/close-icon.png" class="closebt" style="-webkit-filter:brightness(0);filter:brightness(0);-moz-filter:brightness(0);">
@@ -127,12 +127,15 @@
     </div>
 </div>
 </body>
+<script src="assets/js/skrollr.min.js"></script>
 <script src="assets/js/animatedModal.js"></script>
 <script src="assets/js/anime.min.js"></script>
 <script src="assets/js/canvas.js"></script>
 <script src="assets/js/plane.js"></script>
 <script src="assets/js/balloon.js"></script>
 <script>
+        var s = skrollr.init();
+
     $(document).ready(function(){
         if(window.innerHeight > window.innerWidth) {
     console.log("Please use Landscape!");
@@ -220,7 +223,7 @@
         });
          // $('.about-us').hide();
    
-        }, 5000);
+        }, 500);
         var x = $(".main-content").offset().top + $(".main-content").height(); 
          $('.ripple-wrap').css("top",x+"px");
         $('.firki').hover(function(){
