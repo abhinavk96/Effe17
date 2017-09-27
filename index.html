@@ -131,7 +131,8 @@
         <div class="modal-content">
                 <img src="assets/images/generic-loader.svg" id="pro-loader" class="generic-loader">
 
-                 <iframe  scrolling="no" id="proFrame" style="overflow:hidden" onload="this.width=window.innerWidth;this.height=window.innerHeight"></iframe>
+                 <!-- <iframe  scrolling="no" id="proFrame" style="overflow:hidden" onload="this.width=window.innerWidth;this.height=window.innerHeight"></iframe> -->
+                 <div id="proshows-content"></div>
         </div>
     </div>
 
@@ -225,7 +226,7 @@
         modalTarget: 'proModal'
     });
     $('#proshows').animatedModal({
-        color:'transparent',
+        color:'black',
         modalTarget: 'proModal'
     });
 
@@ -294,13 +295,14 @@
     });
     $('#proshows').on('click', function(){
         console.log('frame frame');
-        if(!isProModalOpen) {
-        $('#proFrame').attr('src','./pro/index.html');
-        $('#proFrame').on('load', function(){
-            $('#pro-loader').hide();
-        });
-        isProModalOpen=true
-        }
+        $('#proshows-content').load("https://cosmiccoder96.github.io/Effe17/pro/index.html");
+        // if(!isProModalOpen) {
+        // $('#proFrame').attr('src','./pro/index.html');
+        // $('#proFrame').on('load', function(){
+        //     $('#pro-loader').hide();
+        // });
+        // isProModalOpen=true
+        // }
     });
     $(window).on('load', function() { 
 
