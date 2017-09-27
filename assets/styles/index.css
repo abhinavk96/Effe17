@@ -8,6 +8,7 @@
 
 body,html {
 	/*overflow:hidden;*/
+
 	margin-left:0;
 	margin-right:0;
 	margin:0;
@@ -16,6 +17,48 @@ body,html {
 }
 iframe, object, embed {
     max-width: 100%;
+}
+#events-later {
+	position:fixed;
+	top:8%;
+	left:16%;
+	width:10vw;
+
+}
+#about-us-later {
+	position:fixed;
+	top:8%;
+	left:8%;
+	width:10vw;
+
+}
+#sponsors-later {
+	position:fixed;
+	top:8%;
+	right:4%;
+	width:10vw;
+
+}
+#register-later {
+	position:fixed;
+	top:8%;
+	right:15%;
+	width:10vw;
+
+}
+#contact-later {
+	position:fixed;
+	top:8%;
+	right:15%;
+	width:10vw;
+
+}
+#social-later {
+	position:fixed;
+	top:8%;
+	right:15%;
+	width:10vw;
+
 }
 #closebt-container {
 	position: relative;
@@ -42,15 +85,15 @@ iframe, object, embed {
 	transform:rotate(90deg);
 }
 .content {
-	overflow: hidden!important;
 	visibility: hidden;
-	overflow:hidden;
+	position: fixed;
 	background: url('../images/background-2.png');
 	background-size:cover;
 	background-repeat: no-repeat;
 	margin-left:0;
 	margin-right:0;
 	z-index:0;
+	height: 100%;
 }
 .blurred {
 	-webkit-filter:blur(10px);
@@ -64,11 +107,10 @@ iframe, object, embed {
 	top: 8%;
 	display: block;
 	margin: auto;
-	height:20vh;
-	width:50%;
-	background: url('../images/main-logo.png');
+	width:40%;
+/*	background: url('../images/main-logo.png');
 	background-size: contain;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 
     left: 0;
     right: 0;
@@ -111,14 +153,14 @@ right:0;
  -ms-transform: rotate(-20deg); /* IE 9 */
     -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
     transform: rotate(-20deg);
-   -webkit-transition: width 0.6s, height 1.2s, background-color 1.2s, -webkit-transform 1.2s;
-    transition: width 0.6s, height 1.2s, background-color 1.2s, transform 1.2s;
+   -webkit-transition: width 0.6s, height 1.2s, background-color 1.2s, -webkit-transform 0.6s;
+    transition: width 0.6s, height 1.2s, background-color 1.2s, transform 0.6s;
 }
 .firki{
 	width:6vw;
 height:auto;
 position:fixed;
-top:2%;
+top:5%;
 left:0;
 -webkit-transition: width 0.6s, height 1.2s, background-color 1.2s, -webkit-transform 1.2s;
 transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
@@ -193,13 +235,13 @@ transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
 }
 
 .ripple-wrap {
-	position: absolute;
+	position: fixed;
 	background-color:white;
 
 }
 
 .ripple-wrap canvas {
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	/*height:50vh;*/
 	background-size: contain;
@@ -207,8 +249,10 @@ transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
 
 .ripple-image {
 /*	width: 50%;
+	position
 	height:30vh;
 */	display: none;
+position: fixed;
 }
 
 /**kite

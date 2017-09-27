@@ -45,11 +45,9 @@
 </div>
 <div class="content" style="visibility: hidden">
 <canvas class="fireworks"></canvas>
-<div class="main-logo">
-    
-</div>
+<img data-0="top:8%;width:45%;" data-500="top:0%;width:30%" class="main-logo" src="assets/images/main-logo.png"> 
 <div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
-    <a id="plane" href="#contactModal" class="plane-elements">
+    <a data-0="opacity:1" data-500="opacity:0" id="plane" href="#contactModal" class="plane-elements">
         <div class="direction">
             <div class="element propeller"></div>
             <div class="element plane"></div>
@@ -61,11 +59,19 @@
     </a>
 </div>
 <a data-0="opacity:1" data-500="opacity:0" href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
-<a ><img src="assets/images/firki.png" class="firki"><img src="assets/images/about-us.png" class="about-us" style=""></a>
+<a ><img src="assets/images/firki.png" class="firki" data-0="transform:rotate(0deg);left:0%;top:2%;" data-100="transform:rotate(360deg);left:25%;top:25%;" data-200="transform:rotate(720deg);left:48%;top:10%;"><img src="assets/images/about-us.png" class="about-us" style=""></a>
 
 
 <a data-0="opacity:1" data-500="opacity:0" id="kite-large" href="#sponsorsModal" class="kite">
-</a>
+</a
+<a><img id="about-us-later" data-0="left:-50%" data-400="left:6%" src="assets/images/about-us-later.png"></a>
+<a ><img id="events-later" data-0="top:-50%" data-400="top:8%" src="assets/images/events-later.png"></a>
+<a ><img id="sponsors-later" data-0="right:-50%" data-400="right:25%" src="assets/images/sponsors-later.png"></a>
+<a ><img id="register-later" data-0="top:-50%" data-400="top:8%" src="assets/images/register-later.png"></a>
+<a ><img id="contact-later" data-0="right:-50%" data-400="right:4%" src="assets/images/contact-later.png"></a>
+<a ><img id="social-later" data-0="left:-50%" data-400="left:27%" src="assets/images/social-later.png"></a>
+
+
 <a data-0="opacity:1" data-500="opacity:0" id="boat-main" href="#teamModal" class="boat">
 </a>
 <a data-0="opacity:1" data-500="opacity:0" id="balloon" href="#eventsModal" class="balloon-elements">
@@ -73,7 +79,7 @@
         <div class="element balloon"></div>
     </div>
 </a>
-<a id="balloon2" href="#proModal" class="pro-balloon">
+<a data-0="opacity:1" data-500="opacity:0" id="balloon2" href="#proModal" class="pro-balloon">
     
 </a>
 <img data-0="opacity:1" data-500="opacity:0" class="main-content" src="assets/images/taj-upper.png">
@@ -134,8 +140,7 @@
 <script src="assets/js/plane.js"></script>
 <script src="assets/js/balloon.js"></script>
 <script>
-        var s = skrollr.init();
-
+    var s = skrollr.init();
     $(document).ready(function(){
         if(window.innerHeight > window.innerWidth) {
     console.log("Please use Landscape!");
@@ -214,6 +219,7 @@
         }
     });
     $(window).on('load', function() { 
+
         setTimeout(function() {
              $('.loader').fadeOut("slow", function(){
                 $('.loader').hide();
@@ -224,8 +230,14 @@
          // $('.about-us').hide();
    
         }, 500);
-        var x = $(".main-content").offset().top + $(".main-content").height(); 
-         $('.ripple-wrap').css("top",x+"px");
+        setTimeout(function() {
+            var x = Math.floor(window.innerHeight*0.4) + $(".main-content").height(); 
+         console.log($(".main-content").offset().top);
+         $('.ripple-wrap canvas').css("top",x+"px");
+
+   
+        }, 200);
+        
         $('.firki').hover(function(){
             console.log(12)
             $('.about-us').css('top', "4%");
