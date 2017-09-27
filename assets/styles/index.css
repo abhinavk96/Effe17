@@ -110,7 +110,9 @@ font-family: 'Berkshire Swash', cursive;
 	margin-bottom:-10%;
 	/*margin-right:10%;*/
 }
-
+.modal-content {
+	padding-top:12%;
+}
 .closebt {
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
