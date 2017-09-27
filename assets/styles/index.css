@@ -18,6 +18,12 @@ body,html {
 iframe, object, embed {
     max-width: 100%;
 }
+.foot-print {
+	position: fixed;
+	width:10vw;
+	top:50%;
+	left:5%;
+}
 #events-later {
 	position:fixed;
 	top:8%;
