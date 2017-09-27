@@ -20,11 +20,8 @@ iframe, object, embed {
 }
 .statistics {
 	position:fixed;
-	width:50%;
-	top:45%;
-	left:50%;
-	opacity:0;
-	font-family: 'Courgette', cursive;
+	top:50%;
+	width:10vw;
 
 }
 
