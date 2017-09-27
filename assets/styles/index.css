@@ -29,6 +29,17 @@ iframe, object, embed {
 	top:30%;
 	width:15%;
 }
+.about-us {
+	position: fixed;
+	top:30%;
+	width:50%;
+	height:50%;
+	right:10%;
+	/*color:#c867ba;*/
+	font-family: 'Courgette', cursive;
+	overflow:hidden;
+	font-size: 1.5em;
+}
 
 
 .foot-print {
@@ -187,16 +198,6 @@ transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
 .firki:hover {
 	-webkit-animation:;
 	transform: rotate(720deg);
-}
-.about-us {
-	top:-10%;
-	left:6vw;
-	width:8vw;
-	position: fixed;
-	/*opacity: 0;*/
-	height:auto;
-	-webkit-transition: all 1s;
-	transition: all 1s;
 }
 
 
