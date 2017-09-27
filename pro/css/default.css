@@ -11,6 +11,7 @@ html { height: 100%; }
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */

@@ -131,7 +131,7 @@
         <div class="modal-content">
                 <img src="assets/images/generic-loader.svg" id="pro-loader" class="generic-loader">
 
-                 <iframe  scrolling="no" id="proFrame" style="overflow:hidden" onload="this.width=window.innerWidth;this.height=window.innerHeight+100"></iframe>
+                 <iframe  scrolling="no" id="proFrame" style="overflow:hidden" onload="this.width=window.innerWidth;this.height=window.innerHeight"></iframe>
         </div>
     </div>
 
@@ -295,7 +295,7 @@
     $('#proshows').on('click', function(){
         console.log('frame frame');
         if(!isProModalOpen) {
-        $('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html');
+        $('#proFrame').attr('src','./pro/index.html');
         $('#proFrame').on('load', function(){
             $('#pro-loader').hide();
         });
