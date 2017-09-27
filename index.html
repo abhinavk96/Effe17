@@ -29,13 +29,15 @@
 
     <link rel="stylesheet" href="assets/styles/animate.min.css">
     <link rel="stylesheet" href="assets/styles/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/plane.css">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+ <link rel="stylesheet" href="assets/styles/plane.css">
     <link rel="stylesheet" href="assets/styles/balloon.css">
     <meta name="viewport" content="width=device-width, height=device-height">
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/tweenMax.js"></script>
     <script src="assets/js/ripple.js"></script>
+
 <!--     <script src="./pace/pace.js"></script>
     <link href="./pace/themes/blue/pace-theme-barber-shop.css" rel="stylesheet" /> -->
 </head>
@@ -64,13 +66,13 @@
 
 
 <a data-0="opacity:1" data-500="opacity:0" id="kite-large" href="#sponsorsModal" class="kite">
-</a
-<a><img id="about-us-later" data-0="left:-50%" data-400="left:6%" src="assets/images/about-us-later.png"></a>
-<a ><img id="events-later" data-0="top:-50%" data-400="top:8%" src="assets/images/events-later.png"></a>
-<a ><img id="sponsors-later" data-0="right:-50%" data-400="right:25%" src="assets/images/sponsors-later.png"></a>
-<a ><img id="register-later" data-0="top:-50%" data-400="top:8%" src="assets/images/register-later.png"></a>
-<a ><img id="contact-later" data-0="right:-50%" data-400="right:4%" src="assets/images/contact-later.png"></a>
-<a ><img id="social-later" data-0="left:-50%" data-400="left:27%" src="assets/images/social-later.png"></a>
+</a>
+<a href="#proModal" id="proshows"><img id="about-us-later" data-0="left:-50%" data-400="left:6%" src="assets/images/about-us-later.png"></a>
+<a href="#eventsModal" id="events"><img id="events-later" data-0="top:-50%" data-400="top:8%" src="assets/images/events-later.png"></a>
+<a href="#sponsorsModal" id="sponsors"><img id="sponsors-later" data-0="right:-50%" data-400="right:25%" src="assets/images/sponsors-later.png"></a>
+<a href="https://effe.org.in/register.php" ><img id="register-later" data-0="top:-50%" data-400="top:8%" src="assets/images/register-later.png"></a>
+<a href="#contactModal" id="contact"><img id="contact-later" data-0="right:-50%" data-400="right:4%" src="assets/images/contact-later.png"></a>
+<a href="#" id="social-cause"><img id="social-later" data-0="left:-50%" data-400="left:27%" src="assets/images/social-later.png"></a>
 
 
 <a data-0="opacity:1" data-500="opacity:0" id="boat-main" href="#teamModal" class="boat">
@@ -129,7 +131,7 @@
         <div class="modal-content">
                 <img src="assets/images/generic-loader.svg" id="pro-loader" class="generic-loader">
 
-                 <iframe  scrolling="no" id="proFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
+                 <iframe  scrolling="no" id="proFrame" style="overflow:hidden" onload="this.width=window.innerWidth;this.height=window.innerHeight+100"></iframe>
         </div>
     </div>
 
@@ -138,9 +140,9 @@
     <img class="effe-logo" data-0="opacity:0;right:-100%" data-400="opacity:0;right:0%" data-700="opacity:1;right:65%" data-900="opacity:0;right:65%" src="assets/images/about-us-logo-right.png">
 
     
-    <div class="about-us" data-0="opacity:0;" data-600="opacity:0;display:block;" data-700="opacity:1;display:block;" data-800="opacity:0;display:none;">
+    <div class="about-us" data-0="opacity:0;display:block;" data-600="opacity:0;top:30%;display:block;" data-700="opacity:1;top:30%;display:block;" data-800="opacity:0;display:block;">
         <h1>About Us</h1>
-        EFFERVECSENCE (fondly nicknamed EFFE)is the annual cultural festival of IIIT Allahabad, and it’s the second largest college fest in Uttar Pradesh and well renowned in India. Generally held in mid October,it attracts national as well as international participation in its multiple events during the fest. Effervescence is committed to creating an unforgettable and joyous experience for all its visitors, along with providing people from different areas a chance to showcase their talents, explore their hidden potential and win gigantic cash prizes in a very competitive yet learning environment. Celebrating the cultural variations in india, this year Effervescence gears up to leave an enigmatic impact with its theme ‘An Indian Affair’. The festival will be held from 13th October to 15th October, 2017. Join us for this cultural extravaganza!
+        <p style="font-family: 'Poiret One', cursive; font-weight: 600">EFFERVECSENCE (fondly nicknamed EFFE)is the annual cultural festival of IIIT Allahabad, and it’s the second largest college fest in Uttar Pradesh and well renowned in India. Generally held in mid October,it attracts national as well as international participation in its multiple events during the fest. Effervescence is committed to creating an unforgettable and joyous experience for all its visitors, along with providing people from different areas a chance to showcase their talents, explore their hidden potential and win gigantic cash prizes in a very competitive yet learning environment. Celebrating the cultural variations in india, this year Effervescence gears up to leave an enigmatic impact with its theme ‘An Indian Affair’. The festival will be held from 13th October to 15th October, 2017. Join us for this cultural extravaganza!</p>
     </div>
 
     <!-- Foot Prints section -->
@@ -192,7 +194,15 @@
         color:'white',
         modalTarget: 'sponsorsModal'
     });
+    $('#sponsors').animatedModal({
+        color:'white',
+        modalTarget: 'sponsorsModal'
+    });
     $('#plane').animatedModal({
+        color:'black',
+        modalTarget: 'contactModal'
+    });
+    $('#contact').animatedModal({
         color:'black',
         modalTarget: 'contactModal'
     });
@@ -206,7 +216,15 @@
         color:'white',
         modalTarget: 'eventsModal'
     });
+    $('#events').animatedModal({
+        color:'white',
+        modalTarget: 'eventsModal'
+    });
     $('#balloon2').animatedModal({
+        color:'transparent',
+        modalTarget: 'proModal'
+    });
+    $('#proshows').animatedModal({
         color:'transparent',
         modalTarget: 'proModal'
     });
@@ -217,7 +235,15 @@
     var isSponsorsModalOpen=false;
 
 
-
+    $('#events').on('click', function() {
+        if(!isEventsModalOpen) {
+        $('#eventsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/events-all/index.html')
+        $('#eventsFrame').on('load', function(){
+            $('#events-loader').hide()
+        });
+        isEventsModalOpen=true
+        }
+    });
     $('#balloon').on('click', function(){
         console.log('frame frame');
         if(!isEventsModalOpen) {
@@ -237,6 +263,15 @@
         isSponsorsModalOpen=true
         }
     });
+    $('#sponsors').on('click', function(){
+        if(!isSponsorsModalOpen) {
+        $('#sponsorsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/sponsors/index.html')
+        $('#sponsorsFrame').on('load', function(){
+            $('#sponsors-loader').hide()
+        });
+        isSponsorsModalOpen=true
+        }
+    });
     $('#boat-main').on('click', function(){
         console.log('frame frame');
         if(!isTeamModalOpen) {
@@ -248,6 +283,16 @@
         }
     });
     $('#balloon2').on('click', function(){
+        console.log('frame frame');
+        if(!isProModalOpen) {
+        $('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html');
+        $('#proFrame').on('load', function(){
+            $('#pro-loader').hide();
+        });
+        isProModalOpen=true
+        }
+    });
+    $('#proshows').on('click', function(){
         console.log('frame frame');
         if(!isProModalOpen) {
         $('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html');

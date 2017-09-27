@@ -17,7 +17,10 @@ body,html {
 }
 iframe, object, embed {
     max-width: 100%;
+    height:100vh;
+    display: block;
 }
+
 .statistics {
 	position:fixed;
 	top:50%;
@@ -33,12 +36,20 @@ iframe, object, embed {
 	position: fixed;
 	top:30%;
 	width:50%;
-	height:50%;
+	height:60%;
 	right:10%;
+	color:#0e0a4e;
+	/*border:2px splid;*/
 	/*color:#c867ba;*/
-	font-family: 'Courgette', cursive;
-	overflow:hidden;
+  /*font-family: 'Righteous', serif;*/
+font-family: 'Berkshire Swash', cursive;
+	/*overflow:hidden;*/
 	font-size: 1.5em;
+	/*text-shadow:
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;*/
 }
 
 
@@ -91,7 +102,7 @@ iframe, object, embed {
 
 }
 #closebt-container {
-	position: relative;
+	position: fixed;
 	top:5px;
 	width:99%;
 	text-align: right;
@@ -322,3 +333,5 @@ position: fixed;
 		transform: translatey(0px);
 	}
 }
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
