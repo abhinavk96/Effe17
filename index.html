@@ -228,6 +228,11 @@
     $('#proshows').animatedModal({
         color:'black',
         modalTarget: 'proModal'
+        // width:'80%',
+        // height:'80%',
+        // left:'10%',
+        // top:'10%'
+
     });
 
     var isEventsModalOpen=false;
@@ -295,8 +300,11 @@
     });
     $('#proshows').on('click', function(){
         console.log('frame frame');
+        if(!isProModalOpen) {
+
         $('#proshows-content').load("https://cosmiccoder96.github.io/Effe17/pro/index.html", function() {
-            $('#pro-loader').hide();
+        $('#pro-loader').hide();
+        isProModalOpen=true;
 
         });
         // if(!isProModalOpen) {
@@ -306,6 +314,7 @@
         // });
         // isProModalOpen=true
         // }
+    }
     });
     $(window).on('load', function() { 
 
