@@ -18,6 +18,17 @@ body,html {
 iframe, object, embed {
     max-width: 100%;
 }
+.statistics {
+	position:fixed;
+	width:50%;
+	top:45%;
+	left:50%;
+	opacity:0;
+	font-family: 'Courgette', cursive;
+
+}
+
+
 .foot-print {
 	position: fixed;
 	width:10vw;
