@@ -29,6 +29,11 @@ iframe, object, embed {
 	width:10vw;
 
 }
+.farhan {
+	position:fixed;
+	top:30%;
+	width: 40vw;
+}
 .effe-logo {
 	position: fixed;
 	top:30%;
