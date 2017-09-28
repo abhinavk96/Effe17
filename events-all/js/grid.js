@@ -371,7 +371,7 @@ var Grid = (function() {
 				// position the preview correctly
 				this.positionPreview();
 			console.log('hello');
-				
+
 			}
 
 			// update current value
@@ -463,7 +463,7 @@ var Grid = (function() {
 				itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
 			}
 
-			this.height = heightPreview;
+			this.height = Math.floor(window.innerHeight*0.5);
 			this.itemHeight = itemHeight;
 
 		},

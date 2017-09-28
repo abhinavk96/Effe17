@@ -344,8 +344,8 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			// this.$href = $( '<a href="#">Visit website</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description );
+			this.$href = $( '<a href="#">Visit website</a>' );
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -379,7 +379,7 @@ var Grid = (function() {
 			// update preview´s content
 			var $itemEl = this.$item.children( 'a' ),
 				eldata = {
-					// href : $itemEl.attr( 'href' ),
+					href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' )
@@ -387,7 +387,7 @@ var Grid = (function() {
 
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
-			// this.$href.attr( 'href', eldata.href );
+			this.$href.attr( 'href', eldata.href );
 
 			var self = this;
 			
@@ -462,7 +462,7 @@ var Grid = (function() {
 				itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
 			}
 
-			this.height = Math.floor(window.innerHeight*0.1);
+			this.height = heightPreview;
 			this.itemHeight = itemHeight;
 
 		},

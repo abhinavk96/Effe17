@@ -1,22 +1,16 @@
 .og-grid {
 	list-style: none;
 	padding: 20px 0;
-	padding-bottom: -20%;
 	margin: 0 auto;
-	text-align: left;
-	width: 110%;
-	height:120%;
-	overflow: scroll;
-	/*overflow-x: s;*/
-	overflow-y:scroll;
+	text-align: center;
+	width: 100%;
 }
 
 .og-grid li {
 	display: inline-block;
 	margin: 10px 5px 0 5px;
-	/*width:20%;*/
 	vertical-align: top;
-	/*height: 500px;*/
+	height: 250px;
 }
 
 .og-grid li > a,
@@ -25,7 +19,6 @@
 	outline: none;
 	display: block;
 	position: relative;
-	/*width:100%;*/
 }
 
 .og-grid li.og-expanded > a::after {
@@ -47,12 +40,11 @@
 	background: #ddd;
 	top: auto;
 	left: 0;
-	width: 80%;
+	width: 100%;
 	margin-top: 10px;
 	text-align: left;
 	height: 0;
 	overflow: hidden;
-	z-index:10000;
 }
 
 .og-expander-inner {
@@ -153,9 +145,7 @@
 	border-color: #999;
 	color: #999;
 }
-/*img {
-	width:40vw;
-}*/
+
 .og-loading {
 	width: 20px;
 	height: 20px;
