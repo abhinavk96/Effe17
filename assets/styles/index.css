@@ -62,7 +62,7 @@ font-family: 'Berkshire Swash', cursive;
 #events-later {
 	position:fixed;
 	top:8%;
-	left:16%;
+	left:13%;
 	width:10vw;
 
 }
@@ -83,37 +83,34 @@ font-family: 'Berkshire Swash', cursive;
 #register-later {
 	position:fixed;
 	top:8%;
-	right:15%;
+	right:14%;
 	width:10vw;
 
 }
 #contact-later {
 	position:fixed;
 	top:8%;
-	right:15%;
+	right:11%;
 	width:10vw;
 
 }
 #social-later {
 	position:fixed;
 	top:8%;
-	right:15%;
+	right:17%;
 	width:10vw;
 
 }
 #closebt-container {
 	position: fixed;
-	top:5px;
-	width:99%;
+	top:15px;
+	width:90%;
 	text-align: right;
 	margin-top:0%;
-	z-index:10000;
 	margin-bottom:-10%;
 	/*margin-right:10%;*/
 }
-.modal-content {
-	/*padding-top:12%;*/
-}
+
 .closebt {
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -218,7 +215,7 @@ transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
 #kite-large {
 	position: absolute !important;
 	top: 22%;
-	left:70%;
+	left:75%;
 	display: block;
 	margin-left: 5vw;
 	height:45vh;
@@ -234,11 +231,11 @@ transition: width 0.6s, height 1.2s, background-color 1.2s, transform 2s;
 }
 #boat-main {
 	position: absolute !important;
-	top: 70%;
+	top: 80%;
 	right:0%;
 	display: block;
 	margin-left: 5vw;
-	height:20vh;
+	height:13vh;
 	z-index: 100;
 	opacity:0.9;
 	width:12vw;
@@ -292,6 +289,16 @@ position: fixed;
 /**kite
 *
 */
+.znet {
+	position:absolute;
+	z-index:10000;
+	bottom:0;
+	right:0;
+}
+.znet img {
+	width:8vw;
+	z-index:10000;
+}
 .kite {
 	animation:dash 8s ease-in-out infinite; transform-origin: 60% bottom;
 }

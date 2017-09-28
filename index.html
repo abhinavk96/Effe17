@@ -49,7 +49,8 @@
 <div class="content" style="visibility: hidden">
 <canvas class="fireworks"></canvas>
 <img data-0="top:8%;width:45%;" data-500="top:0%;width:30%" class="main-logo" src="assets/images/main-logo.png"> 
-<div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
+<a href="https://www.znetlive.com/" class="znet" href=""><img src="https://cosmiccoder96.github.io/Effe17/sponsors/znet.jpg"></a>
+<!--div class="plane-wrapper" style="position:fixed;top:0;width:100%;overflow-x:hidden;height:20%;">
     <a data-0="opacity:1" data-500="opacity:0" id="plane" href="#contactModal" class="plane-elements">
         <div class="direction">
             <div class="element propeller"></div>
@@ -60,19 +61,19 @@
             <div class="element banner-tip"></div>
         </div>
     </a>
-</div>
+</div-->
 <a data-0="opacity:1" data-500="opacity:0" href="https://effe.org.in/register"><img src="assets/images/register.png" class="register"></a>
-<a ><img src="assets/images/firki.png" class="firki" data-0="transform:rotate(0deg);left:0%;top:2%;" data-100="transform:rotate(360deg);left:25%;top:25%;" data-200="transform:rotate(720deg);left:48%;top:10%;"></a>
+<a ><img src="assets/images/firki.png" class="firki" data-0="transform:rotate(0deg);left:0%;top:2%;opacity:1" data-500="opacity:0"></a>
 
 
 <a data-0="opacity:1" data-500="opacity:0" id="kite-large" href="#sponsorsModal" class="kite">
 </a>
-<a href="#proModal" id="proshows"><img id="about-us-later" data-0="left:-50%" data-400="left:6%" src="assets/images/about-us-later.png"></a>
-<a href="#eventsModal" id="events"><img id="events-later" data-0="top:-50%" data-400="top:8%" src="assets/images/events-later.png"></a>
-<a href="#sponsorsModal" id="sponsors"><img id="sponsors-later" data-0="right:-50%" data-400="right:25%" src="assets/images/sponsors-later.png"></a>
-<a href="https://effe.org.in/register.php" ><img id="register-later" data-0="top:-50%" data-400="top:8%" src="assets/images/register-later.png"></a>
-<a href="#contactModal" id="contact"><img id="contact-later" data-0="right:-50%" data-400="right:4%" src="assets/images/contact-later.png"></a>
-<a href="#" id="social-cause"><img id="social-later" data-0="left:-50%" data-400="left:27%" src="assets/images/social-later.png"></a>
+<a href="#proModal" id="proshows"><img id="about-us-later" data-0="left:-50%" data-450="left:2%" src="assets/images/about-us-later.png"></a>
+<a href="#eventsModal" id="events"><img id="events-later" data-0="top:-50%" data-450="top:8%" src="assets/images/events-later.png"></a>
+<a href="#sponsorsModal" id="sponsors"><img id="sponsors-later" data-0="right:-24%" data-450="right:24%" src="assets/images/sponsors-later.png"></a>
+<a href="https://effe.org.in/register.php" ><img id="register-later" data-0="top:-50%" data-450="top:8%" src="assets/images/register-later.png"></a>
+<a href="#contactModal" id="contact"><img id="contact-later" data-0="right:-50%" data-450="right:3%" src="assets/images/contact-later.png"></a>
+<a href="#" id="social-cause"><img id="social-later" data-0="left:-50%" data-450="left:24%" src="assets/images/social-later.png"></a>
 
 
 <a data-0="opacity:1" data-500="opacity:0" id="boat-main" href="#teamModal" class="boat">
@@ -131,8 +132,7 @@
         <div class="modal-content">
                 <img src="assets/images/generic-loader.svg" id="pro-loader" class="generic-loader">
 
-                 <!-- <iframe  scrolling="no" id="proFrame" style="overflow:hidden" onload="this.width=window.innerWidth;this.height=window.innerHeight"></iframe> -->
-                 <div id="proshows-content"></div>
+                 <iframe  scrolling="no" id="proFrame" style="overflow:hidden" onload="this.width=window.innerWidth;this.height=window.innerHeight+100"></iframe>
         </div>
     </div>
 
@@ -143,7 +143,7 @@
     
     <div class="about-us" data-0="opacity:0;display:block;" data-600="opacity:0;top:30%;display:block;" data-700="opacity:1;top:30%;display:block;" data-800="opacity:0;display:block;">
         <h1>About Us</h1>
-        <p style="font-family: 'Poiret One', cursive; font-weight: 600">EFFERVECSENCE (fondly nicknamed EFFE)is the annual cultural festival of IIIT Allahabad, and it’s the second largest college fest in Uttar Pradesh and well renowned in India. Generally held in mid October,it attracts national as well as international participation in its multiple events during the fest. Effervescence is committed to creating an unforgettable and joyous experience for all its visitors, along with providing people from different areas a chance to showcase their talents, explore their hidden potential and win gigantic cash prizes in a very competitive yet learning environment. Celebrating the cultural variations in india, this year Effervescence gears up to leave an enigmatic impact with its theme ‘An Indian Affair’. The festival will be held from 13th October to 15th October, 2017. Join us for this cultural extravaganza!</p>
+        <p style="font-family: 'Poiret One', cursive; font-weight: 600; font-size: 20px;">EFFERVECSENCE (fondly nicknamed EFFE)is the annual cultural festival of IIIT Allahabad, and it’s the second largest college fest in Uttar Pradesh and well renowned in India. Generally held in mid October, it attracts national as well as international participation in its multiple events during the fest. It is committed to creating an unforgettable experience for all its visitors, along with providing people from different areas a chance to showcase their talents, explore their hidden potential and win gigantic cash prizes in a very competitive yet learning environment. Celebrating the cultural variations in India, this year Effe gears up to leave an enigmatic impact with its theme ‘An Indian Affair’. The festival will be held from 13th October to 15th October, 2017. Join us for this cultural extravaganza!</p>
     </div>
 
     <!-- Foot Prints section -->
@@ -226,13 +226,8 @@
         modalTarget: 'proModal'
     });
     $('#proshows').animatedModal({
-        color:'black',
+        color:'transparent',
         modalTarget: 'proModal'
-        // width:'80%',
-        // height:'80%',
-        // left:'10%',
-        // top:'10%'
-
     });
 
     var isEventsModalOpen=false;
@@ -301,20 +296,12 @@
     $('#proshows').on('click', function(){
         console.log('frame frame');
         if(!isProModalOpen) {
-
-        $('#proshows-content').load("https://cosmiccoder96.github.io/Effe17/pro/index.html", function() {
-        $('#pro-loader').hide();
-        isProModalOpen=true;
-
+        $('#proFrame').attr('src','https://cosmiccoder96.github.io/Effe17/pro/index.html');
+        $('#proFrame').on('load', function(){
+            $('#pro-loader').hide();
         });
-        // if(!isProModalOpen) {
-        // $('#proFrame').attr('src','./pro/index.html');
-        // $('#proFrame').on('load', function(){
-        //     $('#pro-loader').hide();
-        // });
-        // isProModalOpen=true
-        // }
-    }
+        isProModalOpen=true
+        }
     });
     $(window).on('load', function() { 
 
