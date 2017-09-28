@@ -1,4 +1,6 @@
 
+@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
+
 .generic-loader {
 	position:fixed;
 	top:45%!important;
@@ -39,17 +41,27 @@ iframe, object, embed {
 	height:60%;
 	right:10%;
 	color:#0e0a4e;
+
 	/*border:2px splid;*/
 	/*color:#c867ba;*/
   /*font-family: 'Righteous', serif;*/
-font-family: 'Berkshire Swash', cursive;
 	/*overflow:hidden;*/
 	font-size: 1.5em;
+	  font-family: 'Bubblegum Sans', cursive;
+
+
 	/*text-shadow:
 		-2px -2px 0 #000,
 		2px -2px 0 #000,
 		-2px 2px 0 #000,
 		2px 2px 0 #000;*/
+}
+.about-us span{
+	opacity:0;
+	display: inline-block;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 
