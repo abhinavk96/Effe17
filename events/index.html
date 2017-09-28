@@ -11,22 +11,26 @@
     <link rel="shortcut icon" href="../favicon.ico"> 
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+
     <script src="js/modernizr.custom.js"></script>
+
   </head>
-  <body style="background:white">
+  <body style="background:url(images/bg-paid.jpg);background-size:cover;">
     <div class="container"> 
       <!-- Codrops top bar -->
-      <div class="codrops-top clearfix">
-        <a href="http://tympanus.net/Tutorials/HexaFlip/"><strong>&laquo; Previous Demo: </strong>HexaFlip</a>
-        <span class="right">
-          <a href="http://cargocollective.com/jaimemartinez">Illustrations by Jaime Martinez</a>
-          <a href="http://tympanus.net/codrops/?p=14530"><strong>Back to the Codrops Article</strong></a>
-        </span>
-      </div><!--/ Codrops top bar -->
       <header class="clearfix">
-        <h1>Events<span id="all">All</span><span id="main"> Main Stage</span> <span id="ams">AMS</span><span id="lit">Lit</span><span id="drama">Drama</span>
-        <span id="music">Music</span><span id="dance">Dance</span>
+      <i style="position:absolute;left:12vw" id="left-nav" class="fa fa-caret-left fa-5x"></i>
+      <img class="menu" src="images/menu.png"   style="width:400px">
+      <i style="position:absolute;right:12vw;" id="right-nav"class="fa fa-caret-right fa-5x"></i>
+        <h1 style="position:absolute;left:0;right:0" class="event">
+        Events
         </h1>
+
+
+
+       
+
       </header>
       <div class="main">
         <ul id="og-grid" class="og-grid">
@@ -211,9 +215,127 @@ audience. Great competition, Greater effort.">
       // $('.dance').hide();
       // $('.drama').hide();
       // $('.fine-arts').hide();
+      current ="all";
+      $(window).on('load', function(){
+        x= $('.menu').offset().top + $('.menu').height() - Math.floor($('.menu').height()*0.14)+"px";
+        $('.event').css("top",x);
+        y= $('.menu').offset().top + Math.floor($('.menu').height()/2)+"px";
+        $('.fa').css("top", y);
+        currentIndex=0;
+        $('#right-nav').on('click', function(){
+          if(currentIndex<6) {
+            currentIndex++;
+            if(currentIndex == 6) {
+              $('#right-nav').hide();
+            }
+            $('#left-nav').show();
+            updateCategory(currentIndex);
+          }
 
+        });
+        $('#left-nav').on('click', function(){
+          if(currentIndex>0) {
+            currentIndex--;
+            if(currentIndex == 0) {
+              $('#left-nav').hide();
+            }
+            $('#right-nav').show();
+            updateCategory(currentIndex);
+          }
+        });
 
-       current = 'all';
+      })
+      function updateCategory(index) {
+
+        if (index==0) {
+          speed = current=='all' ? 0:1000
+          current="all";
+          $('.event').innerHTML=current;
+          $('.drama').show(speed);
+          $('.lit').show(speed);
+          $('.music').show(speed);
+          $('.dance').show(speed);
+          $('.ams').show(speed);
+          $('.fine-arts').show(speed);
+          $('.main-stage').show(speed);
+          $('#left-nav').hide();
+        }
+        else if(index==1) {
+          speed = current=='all' ? 0:1000
+          current = "main-stage";
+          $('.event').innerHTML=current;
+          $('.main-stage').show(speed);
+          $('.event').innerHTML=current;
+          $('.lit').hide(speed);
+          $('.music').hide(speed);
+          $('.dance').hide(speed);
+          $('.drama').hide(speed);
+          $('.fine-arts').hide(speed);
+          $('.ams').hide(speed);
+        }
+        else if (index==2) {
+          speed = current=='all' ? 0:1000
+          current="drama";
+          $('.event').innerHTML=current;
+          $('.drama').show(speed);
+          $('.lit').hide(speed);
+          $('.music').hide(speed);
+          $('.dance').hide(speed);
+          $('.ams').hide(speed);
+          $('.fine-arts').hide(speed);
+          $('.main-stage').hide(speed);
+        }
+        else if (index==3) {
+          speed = current=='all' ? 0:1000
+          current = "music";
+          $('.event').innerHTML=current;
+          $('.music').show(speed);
+          $('.lit').hide(speed);
+          $('.ams').hide(speed);
+          $('.dance').hide(speed);
+          $('.drama').hide(speed);
+          $('.fine-arts').hide(speed);
+          $('.main-stage').hide(speed);
+        }
+        else if (index==4) {
+          speed = current=='all' ? 0:1000
+          current = "dance";
+          $('.event').innerHTML=current;
+          $('.dance').show(speed);
+          $('.lit').hide(speed);
+          $('.music').hide(speed);
+          $('.ams').hide(speed);
+          $('.drama').hide(speed);
+          $('.fine-arts').hide(speed);
+        $('.main-stage').hide(speed);
+        }
+        else if (index ==5 ) {
+          speed = current=='all' ? 0:1000
+          current="fine-arts";
+          $('.event').innerHTML=current;
+          $('.fine-arts').show(speed);
+          $('.lit').hide(speed);
+          $('.music').hide(speed);
+          $('.ams').hide(speed);
+          $('.drama').hide(speed);
+          $('.dance').hide(speed);
+          $('.main-stage').hide(speed);
+        }
+        else if (index ==6) {
+          speed = current=='all' ? 0:1000
+          current = "ams";
+          $('.event').innerHTML=current;
+          console.log(speed, current);
+          $('.ams').show(speed);
+          $('.lit').hide(speed);
+          $('.music').hide(speed);
+          $('.dance').hide(speed);
+          $('.drama').hide(speed);
+          $('.fine-arts').hide(speed);
+          $('.main-stage').hide(speed);
+        }
+        $('.event').html(current);
+      }
       $('#ams').on('click', function(){
         speed = current=='all' ? 0:1000
         current = "ams";
