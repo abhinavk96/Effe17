@@ -1,143 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Thumbnail Grid with Expanding Preview</title>
-		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
-		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico"> 
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body style="background:white">
-		<div class="container">	
-			<!-- Codrops top bar -->
-			<div class="codrops-top clearfix">
-				<a href="http://tympanus.net/Tutorials/HexaFlip/"><strong>&laquo; Previous Demo: </strong>HexaFlip</a>
-				<span class="right">
-					<a href="http://cargocollective.com/jaimemartinez">Illustrations by Jaime Martinez</a>
-					<a href="http://tympanus.net/codrops/?p=14530"><strong>Back to the Codrops Article</strong></a>
-				</span>
-			</div><!--/ Codrops top bar -->
-			<header class="clearfix">
-				<h1>Main Stage <span>Events</h1>
-			</header>
-			<div class="main">
-				<ul id="og-grid" class="og-grid">
-				<li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Thumbnail Grid with Expanding Preview</title>
+    <meta name="description" content="Thumbnail Grid with Expanding Preview" />
+    <meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body style="background:white">
+    <div class="container"> 
+      <!-- Codrops top bar -->
+      <div class="codrops-top clearfix">
+        <a href="http://tympanus.net/Tutorials/HexaFlip/"><strong>&laquo; Previous Demo: </strong>HexaFlip</a>
+        <span class="right">
+          <a href="http://cargocollective.com/jaimemartinez">Illustrations by Jaime Martinez</a>
+          <a href="http://tympanus.net/codrops/?p=14530"><strong>Back to the Codrops Article</strong></a>
+        </span>
+      </div><!--/ Codrops top bar -->
+      <header class="clearfix">
+        <h1>Events<span id="all">All</span><span id="main"> Main Stage</span> <span id="ams">AMS</span><span id="lit">Lit</span><span id="drama">Drama</span>
+        <span id="music">Music</span><span id="dance">Dance</span>
+        </h1>
+      </header>
+      <div class="main">
+        <ul id="og-grid" class="og-grid">
+        <li class="main-stage">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Innovation" data-description="All emotions come at play with a plethora of feelings at the main stage event for
 Dramatics. A chance not only to showcase one&#39;s talent but also to take home a handsome
 cash prize.">
               <img src="images/thumbs/innovation.jpg" alt="img01"/>
             </a>
           </li>
-          <li>
+          <li class="main-stage">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Incendiary" data-description="College Bands battling for recognition and the thrill to perform in front of a live
 audience. Great competition, Greater effort.">
               <img src="images/thumbs/incendiary.jpg" alt="img01"/>
             </a>
           </li>
-          <li>
+          <li class="main-stage">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Footloose" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
               <img src="images/thumbs/footloose.jpg" alt="img01"/>
             </a>
           </li>
-          <li >
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode-" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
+          <li  class="main-stage">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
               <img src="images/thumbs/alamode.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li class="gone">
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode-" data-description=" Stage fright and public speaking is an issue faced with everyone. As the name suggests, this event is organised for everyone to speak up and show all that they&#39;ve got. It is characterised as an event that manages to highlight the social evils in the most comical and sarcastic way through Nukkad Natak and short poems. If you&#39;re in for a way to attract a crowd a send a special message a through your performance and win amazing prices, register fast!">
-              <img src="images/thumbs/alamode.jpg" alt="img01"/>
+          </li> 
+          <li class="music">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Anakshari" data-description=" Are you a fan of Bollywood music? We’ve got something for you.
+            As soon as you read the word Antakshari, you grew nostalgic ,didn’t you? Fret not, as the Effervescence brings to you your favourite childhood game in this year.This event holds an appeal for all be it the old school melody lovers or the modern pop culture enthusiasts. So, what are you waiting for? Grab your mates in teams of three and register to win exciting cash prizes. Reminisce about the glorious victories you had in this entertaining competition, and make new memories (and some quick bucks) with your friends.">
+              <img src="images/thumbs/antakshari.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li class="gone">
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode-" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
-              <img src="images/thumbs/alamode.jpg" alt="img01"/>
+          </li> 
+          <li class="music">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Unplugged" data-description="Acoustic music is one of the simplest and purest forms of music- the kind that reminds you of passion, emotions and a certain warmth. Introducing Unplugged,the official acoustic event organised during Effervescence.  We invite you to this musical event where you can perform acoustic renditions of your favourite songs and win attractive prizes. ">
+              <img src="images/thumbs/unplugged.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li class="gone">
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode-" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
-              <img src="images/thumbs/alamode.jpg" alt="img01"/>
+          </li> 
+          <li class="music">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Psychedellia" data-description="Love music and hate being judged for it? 
+            We have just the right thing for you.
+            Psychedellia is the mainstage non-competitive event for Musical Bands, with no judges. Being a mainstage event of Effervescence, it presents you with an opportunity that will always be a win win situation. For if you wanna form a new band, but fret failure, or if you’re just a passionate singer, in search of you ‘ikigai’ , worry not. This is Psychedellia for you, an opportunity to showcase your talent in front of a huge, cheering crowd. Here, you’ll surely get a different feeling altogether, So get ready, form bands, and Rock On!!! ">
+              <img src="images/thumbs/psychedellia.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li >
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode-" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
-              <img src="images/thumbs/alamode.jpg" alt="img01"/>
+          </li> 
+          <li class="music">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Melodeiux" data-description="Melodieux is a competitive music event organised for just singers. May the one with the best voice win! All participants are to prepare tracks either alone or in a group of two. They can also give karaoke performances, acoustics aren't allowed though. Just sing your heart out and take away cool goodies and prizes ">
+              <img src="images/thumbs/melodeiux.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li >
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode-" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
-              <img src="images/thumbs/alamode.jpg" alt="img01"/>
-            </a>
-          </li>	
-          <li >
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="A&#39;La Mode-" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
-              <img src="images/thumbs/alamode.jpg" alt="img01"/>
-            </a>
-          </li>	
-          <li >
+          </li> 
+          <li class="lit">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Meme Slam" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
+              <img src="images/thumbs/1.jpg" alt="img01"/>
+            </a>
+          </li> 
+          <li class="lit">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="One on One" data-description=" Sometimes it&#39;s a boon to have the infinite scrolling option on Facebook! But, aren&#39;t you fed up of
+                seeing the repetitive memes in your newsfeed? Is your thumb tired of scrolling through
+                innumerable meme pages just to end up finding not-so- good memes, according to you? If yes,
+                then,&quot;Be the change you want to see in the world.&quot; For memes, the world is virtual. A creative-
+                minded film buff with a good sense of humour can be the change only by putting their cool
+                ideas on posts(not paper!). Meme Slam, is the launchpad for such people. Come forward to see
+                how an hobby is crazily competitive and the most popular memes will find their way to the top.">
               <img src="images/thumbs/alamode.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li >
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="One on One" data-description="ASometimes it&#39;s a boon to have the infinite scrolling option on Facebook! But, aren&#39;t you fed up of
-seeing the repetitive memes in your newsfeed? Is your thumb tired of scrolling through
-innumerable meme pages just to end up finding not-so- good memes, according to you? If yes,
-then,
-
-&quot;Be the change you want to see in the world.&quot; For memes, the world is virtual. A creative-
-minded film buff with a good sense of humour can be the change only by putting their cool
-ideas on posts(not paper!). Meme Slam, is the launchpad for such people. Come forward to see
-how an hobby is crazily competitive and the most popular memes will find their way to the top.">
-              <img src="images/thumbs/alamode.jpg" alt="img01"/>
-            </a>
-          </li>	
-          <li >
+          </li> 
+          <li class="lit">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Dumb Charades" data-description="Get geared up for the game of phrases represented in pantomime as we present to you, a
-cherished and allured pastime-it’s all about dumb charades. Here, you will get an opportunity to
-relish and savour your childhood memories where you&#39;ll have to enact the given task or word for
-your teammates to guess. Apart from the prizes, really cool memories await you all! ">
+            cherished and allured pastime-it’s all about dumb charades. Here, you will get an opportunity to
+            relish and savour your childhood memories where you&#39;ll have to enact the given task or word for
+            your teammates to guess. Apart from the prizes, really cool memories await you all! ">
               <img src="images/thumbs/alamode.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li >
+          </li> 
+          <li class="lit">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Cognoscentia" data-description="All the quiz lovers, you need to hold on tight for this event. Congnoscentia is organised each
-year to put your grey cells into work. This mind numbing quizzing competition covers every
-genre, Literally, everything under the sun! With multiple AV rounds and buzzer rounds, we
-ensure you that you&#39;ll have great fun and win goodies and prizes. It is a quiz to give the rare
-adrenaline rush to both, the audience and the participants alike!!">
+            year to put your grey cells into work. This mind numbing quizzing competition covers every
+            genre, Literally, everything under the sun! With multiple AV rounds and buzzer rounds, we
+            ensure you that you&#39;ll have great fun and win goodies and prizes. It is a quiz to give the rare
+            adrenaline rush to both, the audience and the participants alike!!">
               <img src="images/thumbs/alamode.jpg" alt="img01"/>
             </a>
-          </li>	
-          <li >
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Feathers" data-description="TFeathers, is the annual creative writing event conducted during Effervescence. The first round is online where the participants submit musings or microtales or any entry under 140 characters
-on the given topic. The second round is pen and paper based and is conducted during
-Effervescence. If you&#39;re a writer or even if you want to explore your creative thinking skills, this
-is the best way to start. The best work selected will be awarded various goodies and cash
-prizes. ">
+          </li> 
+          <li class="lit">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Feathers" data-description="Feathers, is the annual creative writing event conducted during Effervescence. The first round is online where the participants submit musings or microtales or any entry under 140 characters
+            on the given topic. The second round is pen and paper based and is conducted during
+            Effervescence. If you&#39;re a writer or even if you want to explore your creative thinking skills, this
+              is the best way to start. The best work selected will be awarded various goodies and cash
+            prizes. ">
               <img src="images/thumbs/alamode.jpg" alt="img01"/>
             </a>
-          </li>	
+          </li>
+          <li class="drama">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Double Trouble" data-description=" You claim to be best friends but still doubt your compatibility? Effervescence brings to you Double Trouble, an event made with amusing and interesting tasks for teams of two to carry out. You connect with some people because maybe you sing a song only they can hear. We're sure that after taking part in different rounds, you'll be dancing to it. Register fast for not only the resonance between the two of you is tested but also because it accounts for unlimited fun and new memories!">
+              <img src="images/thumbs/nukkad.jpg" alt="img01"/>
+            </a>
+          </li> 
+          <li class="drama">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Bindass Bol" data-description=" Stage fright and public speaking is an issue faced with everyone. As the name suggests, this event is organised for everyone to speak up and show all that they've got. It is characterised as an event that manages to highlight the social evils in the most comical and sarcastic way through Nukkad Natak and short poems. If you're in for a way to attract a crowd a send a special message  a through your performance and win amazing prices, register fast!">
+              <img src="images/thumbs/nukkad.jpg" alt="img01"/>
+            </a>
+          </li> 
+          <li class="drama">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Tounges on Fire" data-description=" Is there something on your mind that you  I want to rant about for a long time?  A tongues on fire is the perfect place for such people! At once, two teams are given a random high fever, spicy topic and each team then has to speak for half a minute for or against it. All you have to do is make them speechless with your argument. Tongues on fire begins and the team which makes the other team speechless wins.">
+              <img src="images/thumbs/nukkad.jpg" alt="img01"/>
+            </a>
+          </li> 
+          <li class="drama">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Kahani" data-description=" Kahani is an online event specially for the people who're interested in script writing. It gives an amazing chance to showcase your talent and arouse the writer inside you. If you're an enthusiastic writer, you just can't miss this opportunity. The best scripts are selected and awarded by the jury during Effervescence.">
+              <img src="images/thumbs/kahani.jpg" alt="img01"/>
+            </a>
+          </li> 
+          <li class="dance">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="La Frenze" data-description=" Dance is used to express what is too deep to find for words and La Frenze, one of the most electrifying and enthralling events of effervescence , is the best platform for you to express yourself. It is a duet dance event that has teams selected from the multi-city auditions for the preliminary round. The selected participants proceed to the final round where they get to unfold a whole new world of opportunities and make the crowd go into a frenzy.">
+              <img src="images/thumbs/lafrenze.jpg" alt="img01"/>
+            </a>
+          </li> 
+          <li class="dance">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Carpe Diem" data-description=" Do you have what it takes to get up on the stage and do what you love?
+            If yes, Effervescence, brings you the solo dance competition Carpe Diem. If you have passion and dedication for the art that is dance, then this mainstage event is the perfect place for you to be.This event is indeed a chance to showcase your true mettle in dance and tough competition from participants from various parts of the country ensures a nail biting competition. The participants are selected in the preliminary round during multi-city and the selected ones get a chance to form on the mainstage during Effervescence and get to win amazing cash prizes.">
+              <img src="images/thumbs/carpediem.jpg" alt="img01"/>
+            </a>
+          </li> 
+          
+           <li class="dance">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Show Off" data-description=" Show off is an online dance competition where participants can shoot a video of their 
+                performance and submit it to win prizes. The act can be a solo,duet or group performance, it just has to be a dance and entertaining. Being conducted online, it won't require your presence but only the presence of your passion towards the dance.As the name suggest you finally have a chance to show off your suaveness and make people groove to the beats of your song.">
+              <img src="images/thumbs/showoff.jpg" alt="img01"/>
+            </a>
+          </li> 
+           <li class="fine-arts">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Sketcher" data-description=" Sketcher is an online sketching competition for all the art lovers out there. You just have to take a pencil or a pen or pencil colours and shape your imagination on the paper. Present your thoughts in the form of a sketch and send it to iiita.finearts@gmail.com. The jury selects the best sketches on the basis of the idea,theme and quality of the sketch.It is the event where you can showcase your sketching talents and win goodies for it.">
+              <img src="images/thumbs/showoff.jpg" alt="img01"/>
+            </a>
+          </li> 
+           <li class="fine-arts">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Face Painting" data-description=" We all have two eyes,two ears,one nose and one mouth, but still we all manage to look so different.What if a platform provides one the chance to give someone’s face a more unique appearance? As the name suggests,face painting is an event where one participant showcase his talent by painting the face of his teammate based on the theme given on the spot.This event provides a chance to the participants to transform their friend’s face into a canvas,showcase their artistic works over it and also win prizes!">
+              <img src="images/thumbs/facepainting.jpg" alt="img01"/>
+            </a>
+          </li> 
+           <li class="fine-arts">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Graffiti" data-description=" Are you bored of painting your ideas on the drawing boards?Do you feel that that drawing sheet is too small to showcase your imagination? Graffiti is the best place for you in such a case! You will be provided with paints and will be left free to paint the walls with your ideas.This is the event where you can inspire the world with a new way to paint the walls instead of those old boring monotonous solid colours and also win prizes for this.">
+              <img src="images/thumbs/graffiti.jpg" alt="img01"/>
+            </a>
+          </li>
+          <li class="fine-arts">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Toon Coon" data-description="All of us admire the cartoons published on the sidelines of the newspapers.Everyone has the habit of sketching the funny caricatures of our friends,drawing our favourite cartoon characters on the last pages of our notebooks.Do you want to take this past time to another level,then ToonCoon is the event for you.This is where you can make a cartoon based on the themes which will be provided to you on the spot.The best judged entries will be rewarded.">
+              <img src="images/thumbs/tooncon.jpg" alt="img01"/>
+            </a>
+          </li>  
+          <li class="ams">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Mannequin Challenge" data-description="Mannequin is a trend, and standing against trending waves isn’t a great idea, is it? 
+              Mannequin is a short video spanning 10 to 30 seconds where the action in video remains frozen while the camera moves… sounds great, isn’t it? A great gang, a pinch of creativity, a recorder and that’s all the ingredients required to fetch you cool prizes. So just play with your camera, juggle your mind and come with the most boggling mannequin.">
+              <img src="images/thumbs/mannequin.jpg" alt="img01"/>
+            </a>
+          </li>  
+          <li class="ams">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Tasveer" data-description="Photography is a way of feeling, of touching and of loving. It has little to do with the things you see and everything to do with the way you see it. Explore the hidden photographer in you with the event TASVEER. As is said, a picture is poem without words, because, when words are over pictures speak. Just take your camera and click, not when it seems like, but when it feels like. Check out the themes, capture an instant of life, get a caption and you are all set to be a part of one of the best photography contests. Facebook likes will contribute to your winning and so does the online voting!  So gear up for the contest and be ready to compete with the best. ">
+              <img src="images/thumbs/tasveer.jpg" alt="img01"/>
+            </a>
+          </li>  
+          <li class="ams">
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Safar" data-description="College is that time of life when people make the best memories when they think they're having fun. To capture these memories and have them stored for you all long your life, we present to you, SAFAR, an online photography event that expands its boundaries beyond conventional photography contests. Here you click, edit and if you wish, then even make memes from your clicked pictures. The only constraint being, do all these touching any corner of your college life. The event gives you a chance to explore your campus and your college and at the same time gives you an opportunity to dig out goodies and prizes just by pulling off some innovative and catchy stills.">
+              <img src="images/thumbs/safar.jpg" alt="img01"/>
+            </a>
+          </li>  
+          
+          
+        </ul>
+        <p>Filler text by <a href="http://veggieipsum.com/">Veggie Ipsum</a></p>
+        <a id="og-additems" href="#">add more</a>
+      </div>
+    </div><!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+      // $('.ams').hide();
+      // $('.lit').hide();
+      // $('.music').hide();
+      // $('.dance').hide();
+      // $('.drama').hide();
+      // $('.fine-arts').hide();
 
-					
-				</ul>
-				<p>Filler text by <a href="http://veggieipsum.com/">Veggie Ipsum</a></p>
-				<a id="og-additems" href="#">add more</a>
-			</div>
-		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/grid.js"></script>
-		<script>
-			$(function() {
-				Grid.init();
-			});
-		</script>
-	</body>
+
+       current = 'all';
+      $('#ams').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current = "ams";
+        console.log(speed, current);
+        $('.ams').show(speed);
+        $('.lit').hide(speed);
+        $('.music').hide(speed);
+        $('.dance').hide(speed);
+        $('.drama').hide(speed);
+        $('.fine-arts').hide(speed);
+        $('.main-stage').hide(speed);
+
+      });
+      $('#main').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current = "main-stage";
+        $('.main-stage').show(speed);
+        $('.lit').hide(speed);
+        $('.music').hide(speed);
+        $('.dance').hide(speed);
+        $('.drama').hide(speed);
+        $('.fine-arts').hide(speed);
+        $('.ams').hide(speed);
+
+
+      });
+      $('#lit').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current = "lit";
+        $('.lit').show(speed);
+        $('.ams').hide(speed);
+        $('.music').hide(speed);
+        $('.dance').hide(speed);
+        $('.drama').hide(speed);
+        $('.fine-arts').hide(speed);
+        $('.main-stage').hide(speed);
+
+      });
+      $('#music').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current = "music";
+        $('.music').show(speed);
+        $('.lit').hide(speed);
+        $('.ams').hide(speed);
+        $('.dance').hide(speed);
+        $('.drama').hide(speed);
+        $('.fine-arts').hide(speed);
+        $('.main-stage').hide(speed);
+
+      });
+      $('#dance').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current = "dance";
+        $('.dance').show(speed);
+        $('.lit').hide(speed);
+        $('.music').hide(speed);
+        $('.ams').hide(speed);
+        $('.drama').hide(speed);
+        $('.fine-arts').hide(speed);
+        $('.main-stage').hide(speed);
+
+      });
+      $('#fine-arts').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current="fine-arts";
+        $('.fine-arts').show(speed);
+        $('.lit').hide(speed);
+        $('.music').hide(speed);
+        $('.ams').hide(speed);
+        $('.drama').hide(speed);
+        $('.main-stage').hide(speed);
+      });
+      $('#drama').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current="drama";
+        $('.drama').show(speed);
+        $('.lit').hide(speed);
+        $('.music').hide(speed);
+        $('.dance').hide(speed);
+        $('.ams').hide(speed);
+        $('.fine-arts').hide(speed);
+        $('.main-stage').hide(speed);
+      });
+      $('#all').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current="all";
+        $('.drama').show(speed);
+        $('.lit').show(speed);
+        $('.music').show(speed);
+        $('.dance').show(speed);
+        $('.ams').show(speed);
+        $('.fine-arts').show(speed);
+        $('.main-stage').show(speed);
+      });
+    </script>
+  </body>
 </html>

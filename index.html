@@ -114,7 +114,7 @@
         <div class="modal-content">
                 <img src="assets/images/generic-loader.svg" id="events-loader" class="generic-loader">
 
-                 <iframe  scrolling="no" id="eventsFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
+                 <iframe  id="eventsFrame" onload="this.width=window.innerWidth;this.height=window.innerHeight+200;" ></iframe>
         </div>
     </div>
     <div id="contactModal" class="genericModal">
@@ -248,7 +248,7 @@
     $('#balloon').on('click', function(){
         console.log('frame frame');
         if(!isEventsModalOpen) {
-        $('#eventsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/events-all/index.html')
+        $('#eventsFrame').attr('src','https://cosmiccoder96.github.io/Effe17/events-all/index.html/events/index.html')
         $('#eventsFrame').on('load', function(){
             $('#events-loader').hide()
         });
