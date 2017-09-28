@@ -24,7 +24,7 @@
       <img class="menu" src="images/menu.png"   style="width:400px">
       <i style="position:absolute;right:12vw;" id="right-nav"class="fa fa-caret-right fa-5x"></i>
         <h1 style="position:absolute;left:0;right:0" class="event">
-        Events
+        Main Stage
         </h1>
 
 
@@ -199,7 +199,6 @@ audience. Great competition, Greater effort.">
           
           
         </ul>
-        <a id="og-additems" href="#">add more</a>
       </div>
     </div><!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -220,7 +219,7 @@ audience. Great competition, Greater effort.">
         $('.event').css("top",x);
         y= $('.menu').offset().top + Math.floor($('.menu').height()/2)+"px";
         $('.fa').css("top", y);
-        currentIndex=0;
+        currentIndex=1;
         $('#right-nav').on('click', function(){
           if(currentIndex<6) {
             currentIndex++;
