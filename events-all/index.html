@@ -14,8 +14,11 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-
+      <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+      <script src="js/modernizr.custom.js"></script>
+
 
       <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -228,7 +231,7 @@ a {
 
     </style>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
 
 </head>
 
@@ -248,6 +251,32 @@ a {
             <a href="#t6"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
           </ul>
           <div class="page" id="p1">
+          <div class="main">
+        <ul id="og-grid" class="og-grid">
+          <li>
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Celeb Night" data-description="They say that when you become a celebrity ,you own the world and the world owns you. So get ready to own the world as the bar has been raised up higher. After superstars like Neha Kakkar and Benny Dayal, Effervescence’17 proudly presents to you Farhan AKhtar on MTV Beats Night this October ! ">
+              <img src="images/thumbs/1.jpg" alt="img01"/>
+            </a>
+          </li>
+          <li>
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Rhapsody - The EDM night" data-description="EDM isn’t just about drops and rave, it is the form of music that has something to offer to everyone. Get ready to match you heartbeats with the beats and drops and dance your heart out as famous DJs set the electric mood in the atmosphere! ">
+              <img src="images/thumbs/2.jpg" alt="img02"/>
+            </a>
+          </li>
+          <li>
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Humour Night" data-description="Even if laughter doesn't add years to you life, it surely adds life to your years. 
+Effervescence'17 presents to you the Humour Night for the very first time.  We're bringing in the pros, to help you forget your woes, at least for that one night! ">
+              <img src="images/thumbs/3.jpg" alt="img03"/>
+            </a>
+          </li>
+          <li>
+            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/4.jpg" data-title="Kavyom" data-description="Gear up to enjoy the Infinite Sky of Poetry at Kavyom, being held for the very first time in IIIT Allahabad. Relish an indelible and a stupendous evening with the one and only, Kumar Vishwas. It is doubtlessly going to be the most congenial event for all poetry lovers out there. 
+">
+              <img src="images/thumbs/4.jpg" alt="img03"/>
+            </a>
+          </li>
+        </ul>
+      </div>
              <section class="icon fa fa-camera"><span class="title">AMS<br>Coming Soon!</span><!-- <span class="hint"><br> Just kidding, it won't happen anything but I'll be really happy If you do so.</span> --></section>  
           </div>
           <div class="page" id="p2">
@@ -281,6 +310,13 @@ a {
 </div>
   
     <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+    </script>
 
 
 </body>
