@@ -363,7 +363,6 @@ var Grid = (function() {
 			if( $item ) {
 				this.$item = $item;
 			}
-			
 			// if already expanded remove class "og-expanded" from current item and add it to new item
 			if( current !== -1 ) {
 				var $currentItem = $items.eq( current );
@@ -371,6 +370,8 @@ var Grid = (function() {
 				this.$item.addClass( 'og-expanded' );
 				// position the preview correctly
 				this.positionPreview();
+			console.log('hello');
+				
 			}
 
 			// update current value
