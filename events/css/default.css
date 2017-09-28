@@ -40,7 +40,11 @@ img:hover {
 -webkit-filter: sepia(0);
 	filter: sepia(0);
 }
+.menu {
+-webkit-filter: sepia(0);
+
 }
+
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     background: #f9f9f9;
