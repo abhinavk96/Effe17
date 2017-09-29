@@ -119,7 +119,7 @@ iframe, object, embed {
 
 }
 #closebt-container {
-	position: fixed;
+	position: absolute;
 	top:15px;
 	width:90%;
 	text-align: right;
