@@ -29,6 +29,11 @@ iframe, object, embed {
 	width:10vw;
 
 }
+.welcome {
+	position: fixed;
+	bottom:0%;
+	width:20vw;
+}
 .farhan {
 	position:fixed;
 	top:30%;
