@@ -302,6 +302,7 @@ audience. Great competition, Greater effort.">
       $(function() {
         Grid.init();
       });
+      $('.informal').hide();
       $('.ams').hide();
       $('.lit').hide();
       $('.music').hide();
@@ -318,9 +319,9 @@ audience. Great competition, Greater effort.">
         $('.fa').css("top", y);
         currentIndex=1;
         $('#right-nav').on('click', function(){
-          if(currentIndex<7) {
+          if(currentIndex<8) {
             currentIndex++;
-            if(currentIndex == 7) {
+            if(currentIndex == 8) {
               $('#right-nav').hide();
             }
             $('#left-nav').show();
@@ -353,6 +354,7 @@ audience. Great competition, Greater effort.">
           $('.ams').show(speed);
           $('.fine-arts').show(speed);
           $('.main-stage').show(speed);
+          $('.informal').show(speed);
           $('#left-nav').hide();
         }
         else if(index==1) {
@@ -366,6 +368,7 @@ audience. Great competition, Greater effort.">
           $('.drama').hide(speed);
           $('.fine-arts').hide(speed);
           $('.ams').hide(speed);
+          $('.informal').hide(speed);
           $('.main-stage').show(speed);
 
         }
@@ -379,6 +382,7 @@ audience. Great competition, Greater effort.">
           $('.ams').hide(speed);
           $('.fine-arts').hide(speed);
           $('.main-stage').hide(speed);
+          $('.informal').hide(speed);
           $('.drama').show(speed);
 
         }
@@ -392,6 +396,7 @@ audience. Great competition, Greater effort.">
           $('.drama').hide(speed);
           $('.fine-arts').hide(speed);
           $('.main-stage').hide(speed);
+          $('.informal').hide(speed);
           $('.music').show(speed);
 
         }
@@ -404,7 +409,8 @@ audience. Great competition, Greater effort.">
           $('.ams').hide(speed);
           $('.drama').hide(speed);
           $('.fine-arts').hide(speed);
-        $('.main-stage').hide(speed);
+          $('.main-stage').hide(speed);
+          $('.informal').hide(speed);
           $('.dance').show(speed);
 
         }
@@ -418,6 +424,7 @@ audience. Great competition, Greater effort.">
           $('.drama').hide(speed);
           $('.dance').hide(speed);
           $('.main-stage').hide(speed);
+          $('.informal').hide(speed);
           $('.fine-arts').show(speed);
 
         }
@@ -432,6 +439,7 @@ audience. Great competition, Greater effort.">
           $('.drama').hide(speed);
           $('.fine-arts').hide(speed);
           $('.main-stage').hide(speed);
+          $('.informal').hide(speed);
           $('.ams').show(speed);
 
         }
@@ -446,10 +454,26 @@ audience. Great competition, Greater effort.">
           $('.drama').hide(speed);
           $('.fine-arts').hide(speed);
           $('.main-stage').hide(speed);
+          $('.informal').hide(speed);
           $('.lit').show(speed);
+        }
+        else if (index == 8) {
+          speed = current=='all' ? 0:1000
+          current = "Informal Events";
+          $('.event').innerHTML=current;
+          console.log(speed, current);
+          $('.ams').hide(speed);
+          $('.music').hide(speed);
+          $('.dance').hide(speed);
+          $('.drama').hide(speed);
+          $('.fine-arts').hide(speed);
+          $('.main-stage').hide(speed);
+          $('.lit').show(speed);
+          $('.informal').show(speed);
         }
         $('.event').html(current);
       }
+      
       $('#ams').on('click', function(){
         speed = current=='all' ? 0:1000
         current = "ams";
@@ -461,6 +485,7 @@ audience. Great competition, Greater effort.">
         $('.drama').hide(speed);
         $('.fine-arts').hide(speed);
         $('.main-stage').hide(speed);
+        $('.informal').hide(speed);
 
       });
       $('#main').on('click', function(){
@@ -473,6 +498,7 @@ audience. Great competition, Greater effort.">
         $('.drama').hide(speed);
         $('.fine-arts').hide(speed);
         $('.ams').hide(speed);
+        $('.informal').hide(speed);
 
 
       });
@@ -486,6 +512,7 @@ audience. Great competition, Greater effort.">
         $('.drama').hide(speed);
         $('.fine-arts').hide(speed);
         $('.main-stage').hide(speed);
+        $('.informal').hide(speed);
 
       });
       $('#music').on('click', function(){
@@ -498,6 +525,7 @@ audience. Great competition, Greater effort.">
         $('.drama').hide(speed);
         $('.fine-arts').hide(speed);
         $('.main-stage').hide(speed);
+        $('.informal').hide(speed);
 
       });
       $('#dance').on('click', function(){
@@ -510,6 +538,7 @@ audience. Great competition, Greater effort.">
         $('.drama').hide(speed);
         $('.fine-arts').hide(speed);
         $('.main-stage').hide(speed);
+        $('.informal').hide(speed);
 
       });
       $('#fine-arts').on('click', function(){
@@ -521,6 +550,8 @@ audience. Great competition, Greater effort.">
         $('.ams').hide(speed);
         $('.drama').hide(speed);
         $('.main-stage').hide(speed);
+        $('.informal').hide(speed);
+        
       });
       $('#drama').on('click', function(){
         speed = current=='all' ? 0:1000
@@ -532,6 +563,21 @@ audience. Great competition, Greater effort.">
         $('.ams').hide(speed);
         $('.fine-arts').hide(speed);
         $('.main-stage').hide(speed);
+        $('.informal').hide(speed);
+        
+      });
+       $('#informal').on('click', function(){
+        speed = current=='all' ? 0:1000
+        current="informal";
+        $('.informal').show(speed); 
+        $('.drama').hide(speed);
+        $('.lit').hide(speed);
+        $('.music').hide(speed);
+        $('.dance').hide(speed);
+        $('.ams').hide(speed);
+        $('.fine-arts').hide(speed);
+        $('.main-stage').hide(speed);
+        
       });
       $('#all').on('click', function(){
         speed = current=='all' ? 0:1000
@@ -543,6 +589,7 @@ audience. Great competition, Greater effort.">
         $('.ams').show(speed);
         $('.fine-arts').show(speed);
         $('.main-stage').show(speed);
+        $('.informal').show(speed);
       });
     </script>
   </body>
