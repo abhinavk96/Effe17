@@ -1,3 +1,6 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
 .og-grid {
 	list-style: none;
 	padding: 20px 0;
@@ -86,14 +89,20 @@
 }
 
 .og-fullimg,
-.og-details {
+.og-details,.og-rules {
 	width: 50%;
+	height:40%;
 	float: left;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
-}
 
+}
+.og-rules {
+		top: -17px;
+    padding: 20px 10px 20px 10px;
+    overflow-y: auto;
+}
 .og-details {
 	padding: 0 40px 0 20px;
 }
