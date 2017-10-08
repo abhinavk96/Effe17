@@ -306,11 +306,14 @@
 <script src="assets/js/balloon.js"></script>
 <script>
     var s = skrollr.init();
+    var portrait=false;
     $(document).ready(function(){
         if(window.innerHeight > window.innerWidth) {
     console.log("Please use Landscape!");
-    $('.contenus').hide();
+    $('.content').hide();
+    $('.loader').hide();
     $('body').css("background","url('assets/images/rotate-device.png') no-repeat");
+    portrait=true;
         }
     });
 
@@ -427,6 +430,8 @@
         }
     });
     $(window).on('load', function() { 
+        if(!portrait) {
+
 
         setTimeout(function() {
              $('.loader').fadeOut("slow", function(){
@@ -453,6 +458,7 @@
             $('.about-us').css('top','-10%');
 
         })
+    }
      });
 
 
