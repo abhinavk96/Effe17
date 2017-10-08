@@ -486,6 +486,8 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
             $('.fa').css("top", y);
             currentIndex=1;
             $('#right-nav').on('click', function(){
+              $('.og-close').click();
+              
               if(currentIndex<8) {
                 currentIndex++;
                 if(currentIndex == 8) {
@@ -497,6 +499,8 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
     
             });
             $('#left-nav').on('click', function(){
+              $('.og-close').click();
+
               if(currentIndex>1) {
                 currentIndex--;
                 if(currentIndex == 1) {
@@ -505,6 +509,7 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
                 $('#right-nav').show();
                 updateCategory(currentIndex);
               }
+
             });
     
           })
