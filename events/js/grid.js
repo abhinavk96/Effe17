@@ -344,10 +344,13 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$rules = $( '<div class="og-rules"></div>' );
+			this.$wrapper=$('<div id="wrapper"></div>');
+			this.$rules = $( '<a id="view-rules">View Rules</a>' );
+			// this.$rulesB
+			// this.$wrapper.append(this.$rules);
 
 			// this.$href = $( '<a href="#">Visit website</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$rules );
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$rules);
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -355,6 +358,7 @@ var Grid = (function() {
 			this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 			// append preview element to the item
 			this.$item.append( this.getEl() );
+			
 			// set the transitions for the preview and the item
 			if( support ) {
 				this.setTransition();
@@ -390,7 +394,22 @@ var Grid = (function() {
 
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
-			this.$rules.html( eldata.rules );
+			var desc = this.$description;
+			var toggleButton=this.$rules;
+			var toggleRules=true;
+
+			$('#view-rules').on('click', function() {
+				if(toggleRules) {
+				desc.html(eldata.rules);
+				toggleButton.html('Back');
+				toggleRules=false;
+				}
+				else {
+				desc.html(eldata.description);
+				toggleButton.html('View Rules');
+				toggleRules=true;
+				}
+			});
 
 			// this.$href.attr( 'href', eldata.href );
 
