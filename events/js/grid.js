@@ -346,6 +346,7 @@ var Grid = (function() {
 			this.$description = $( '<p></p>' );
 			this.$wrapper=$('<div id="wrapper"></div>');
 			this.$rules = $( '<a id="view-rules">View Rules</a>' );
+			this.$toggleRules=true;
 			// this.$rulesB
 			// this.$wrapper.append(this.$rules);
 
@@ -365,6 +366,7 @@ var Grid = (function() {
 			}
 		},
 		update : function( $item ) {
+			this.$rules.html("View Rules");
 
 			if( $item ) {
 				this.$item = $item;
@@ -396,9 +398,9 @@ var Grid = (function() {
 			this.$description.html( eldata.description );
 			var desc = this.$description;
 			var toggleButton=this.$rules;
-			var toggleRules=true;
+			var toggleRules=this.$toggleRules;
 
-			$('#view-rules').on('click', function() {
+			toggleButton.on('click', function() {
 				if(toggleRules) {
 				desc.html(eldata.rules);
 				toggleButton.html('Back');
@@ -409,6 +411,7 @@ var Grid = (function() {
 				toggleButton.html('View Rules');
 				toggleRules=true;
 				}
+				this.$toggleRules=toggleRules;
 			});
 
 			// this.$href.attr( 'href', eldata.href );
