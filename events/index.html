@@ -195,7 +195,7 @@ audience. Great competition, Greater effort.">
             <img src="images/thumbs/oneonone.jpg" alt="img01" />
           </a>
         </li>
-        <li class="lit">
+        <li class="lit quiz">
           <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/cognoscentia.jpg" data-title="Cognoscentia" data-description="All the quiz lovers, you need to hold on tight for this event. Congnoscentia is organised each year to put your grey cells into work. This mind numbing quizzing competition covers every
             genre, Literally, everything under the sun! With multiple AV rounds and buzzer rounds, we
             ensure you that you&#39;ll have great fun and win goodies and prizes. It is a quiz to give the rare
@@ -618,7 +618,7 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               <img src="images/thumbs/admania.jpg" alt="img01"/>
             </a>
           </li>   -->
-        <li class="informal">
+        <li class="gaming">
           <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/cs.jpg" data-title="Counter Strike GO" data-description="For the hardcore gamers, we bring to your service the game of the generation - Counter Strike. 
 
               Make your childhood dreams come true by competing for the prize in this multiple round 
@@ -628,7 +628,7 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
             <img src="images/thumbs/csgo.jpg" alt="img01" />
           </a>
         </li>
-        <li class="informal">
+        <li class="gaming">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/dota.jpg" data-title="Dota 2" data-description="For the hardcore gamers, we bring to your service the game of the generation - Dota 2. 
               Make your childhood dreams come true by competing for the prize in this multiple round 
               battle to the end. Watch how the mainstay of many gamers ushers in an arena of competition, 
@@ -637,13 +637,13 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               <img src="images/thumbs/dota.jpg" alt="img01"/>
             </a>
           </li>  
-        <li class="informal">
+        <li class="gaming">
           <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/fifa.jpg" data-title="Fifa17" data-description="FIFA is an online football gaming event played with La Liga format where the winning teams 
               will be decided according to a  knockout round.">
             <img src="images/thumbs/fifa.jpg" alt="img01" />
           </a>
         </li>
-        <li class="informal">
+        <li class="gaming">
           <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/android.jpg" data-title="Android Gamer's Asylum" data-description="This event consists of a competition of popular Android Games like Mini Militia, Bomb Squad 
             and there are two types of entries namely Individual and Team entries. ">
             <img src="images/thumbs/android.jpg" alt="img01" />
@@ -658,7 +658,7 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
             <img src="images/thumbs/panipuri.jpg" alt="img01" />
           </a>
         </li>
-        <li class="informal">
+        <li class="quiz">
           <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/tvquiz.jpg" data-title="TV Series Quiz" data-description="To tickle the minds of every television show enthusiast , we have an event tailor made. From 
               Game Of Thrones to Suits and From How I Met Your Mother to Friends , this event will make 
               you relive those amazing moments to the core.">
@@ -673,7 +673,7 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
             <img src="images/thumbs/cricketquiz.jpg" alt="img01" />
           </a>
         </li>
-        <li class="informal">
+        <li class="quiz">
           <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/animania.jpg" data-title="Animania" data-description="From Dragon Ball Z to Naruto , it was the Anime shows that made our childhood worthwhile. 
             Think you're the biggest anime freak out there? Come , participate and meet your kind(of 
              people). ">
@@ -727,6 +727,8 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
           $('.dance').hide();
           $('.drama').hide();
           $('.fine-arts').hide();
+          $('.gaming').hide();
+          $('.quiz').hide();
           $('.main-stage').show();
           $('#left-nav').hide();
           current ="all";
@@ -739,9 +741,9 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
             $('#right-nav').on('click', function(){
               $('.og-close').click();
               
-              if(currentIndex<8) {
+              if(currentIndex<11) {
                 currentIndex++;
-                if(currentIndex == 8) {
+                if(currentIndex == 11) {
                   $('#right-nav').hide();
                 }
                 $('#left-nav').show();
@@ -792,6 +794,9 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.fine-arts').hide(speed);
               $('.ams').hide(speed);
               $('.informal').hide(speed);
+              $('.fun').hide(speed);
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
               $('.main-stage').show(speed);
     
             }
@@ -806,6 +811,11 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.fine-arts').hide(speed);
               $('.main-stage').hide(speed);
               $('.informal').hide(speed);
+              $('.fun').hide(speed);
+
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
+
               $('.drama').show(speed);
     
             }
@@ -820,6 +830,11 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.fine-arts').hide(speed);
               $('.main-stage').hide(speed);
               $('.informal').hide(speed);
+              $('.fun').hide(speed);
+
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
+
               $('.music').show(speed);
     
             }
@@ -834,6 +849,11 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.fine-arts').hide(speed);
               $('.main-stage').hide(speed);
               $('.informal').hide(speed);
+              $('.fun').hide(speed);
+
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
+
               $('.dance').show(speed);
     
             }
@@ -848,6 +868,11 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.dance').hide(speed);
               $('.main-stage').hide(speed);
               $('.informal').hide(speed);
+              $('.fun').hide(speed);
+
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
+
               $('.fine-arts').show(speed);
     
             }
@@ -863,6 +888,11 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.fine-arts').hide(speed);
               $('.main-stage').hide(speed);
               $('.informal').hide(speed);
+              $('.fun').hide(speed);
+
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
+
               $('.ams').show(speed);
     
             }
@@ -877,6 +907,10 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.drama').hide(speed);
               $('.fine-arts').hide(speed);
               $('.main-stage').hide(speed);
+              $('.fun').hide(speed);
+
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
               $('.informal').hide(speed);
               $('.lit').show(speed);
             }
@@ -889,10 +923,66 @@ PLAGIARISM should be strictly avoided and such photographs shall be immediately 
               $('.music').hide(speed);
               $('.dance').hide(speed);
               $('.drama').hide(speed);
+              $('.fun').hide(speed);
+              $('.fine-arts').hide(speed);
+              $('.main-stage').hide(speed);
+
+              $('.gaming').hide(speed);
+              $('.quiz').hide(speed);
+              $('.lit').hide(speed);
+              $('.informal').show(speed);
+
+            }
+            else if (index == 9) {
+              speed = current=='all' ? 0:1000
+              current = "Fun Events";
+              $('.event').innerHTML=current;
+              console.log(speed, current);
+              $('.ams').hide(speed);
+              $('.music').hide(speed);
+              $('.dance').hide(speed);
+              $('.drama').hide(speed);
               $('.fine-arts').hide(speed);
               $('.main-stage').hide(speed);
               $('.lit').hide(speed);
-              $('.informal').show(speed);
+              $('.informal').hide(speed);
+              $('.quiz').hide(speed);
+              $('.gaming').hide(speed);
+              $('.fun').show(speed);
+            }
+            else if (index == 10) {
+              speed = current=='all' ? 0:1000
+              current = "Gaming Events";
+              $('.event').innerHTML=current;
+              console.log(speed, current);
+              $('.ams').hide(speed);
+              $('.music').hide(speed);
+              $('.dance').hide(speed);
+              $('.drama').hide(speed);
+              $('.fine-arts').hide(speed);
+              $('.main-stage').hide(speed);
+              $('.lit').hide(speed);
+              $('.informal').hide(speed);
+              $('.fun').hide(speed);
+              $('.quiz').hide(speed);
+              $('.gaming').show(speed);
+            }
+            else if (index == 11) {
+              speed = current=='all' ? 0:1000
+              current = "Quizzing Events";
+              $('.event').innerHTML=current;
+              console.log(speed, current);
+              $('.ams').hide(speed);
+              $('.music').hide(speed);
+              $('.dance').hide(speed);
+              $('.drama').hide(speed);
+              $('.fine-arts').hide(speed);
+              $('.main-stage').hide(speed);
+              $('.lit').hide(speed);
+              $('.informal').hide(speed);
+              $('.fun').hide(speed);
+              $('.gaming').hide(speed);
+              $('.quiz').show(speed);
             }
             $('.event').html(current);
           }
